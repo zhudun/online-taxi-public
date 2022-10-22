@@ -1,2 +1,12 @@
 server:
   port: 8090
+spring:
+  application:
+    name: api-passenger
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+
+
