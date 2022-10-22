@@ -1,8 +1,8 @@
 package com.yz.apipassenger.controller;
 
-import com.yz.apipassenger.request.VerificationCodeDTO;
 import com.yz.apipassenger.service.VerificationCodeService;
 import com.yz.internalcommon.dto.ResponseResult;
+import com.yz.internalcommon.request.VerificationCodeDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

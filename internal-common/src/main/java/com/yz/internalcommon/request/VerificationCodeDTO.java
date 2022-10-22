@@ -1,4 +1,4 @@
-package com.yz.apipassenger.request;
+package com.yz.internalcommon.request;
 
 import lombok.Data;
 
