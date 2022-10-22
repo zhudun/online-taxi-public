@@ -1,0 +1,9 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: sevice-verification
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
