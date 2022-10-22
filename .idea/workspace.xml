@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/response/TokenResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/controller/VerificationCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/controller/VerificationCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/request/VerificationCodeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/request/VerificationCodeDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/VerificationCodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/controller/VerificationCodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/controller/VerificationCodeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/request/VerificationCodeDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/request/VerificationCodeDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/service/VerificationCodeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/service/VerificationCodeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1666347684740</updated>
       <workItem from="1666347685836" duration="4841000" />
-      <workItem from="1666410062864" duration="33281000" />
+      <workItem from="1666410062864" duration="34727000" />
     </task>
     <servers />
   </component>
