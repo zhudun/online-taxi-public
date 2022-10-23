@@ -2,6 +2,7 @@ package com.yz.servicepassengeruser.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.yz.servicepassengeruser.dto.PassengerUser;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 /**
