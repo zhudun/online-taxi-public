@@ -3,6 +3,7 @@ package com.yz.apipassenger.service;
 import com.yz.apipassenger.remote.ServicePassengerUserClient;
 import com.yz.apipassenger.remote.ServiceVerificationcodeClient;
 import com.yz.internalcommon.constant.CommonStatusEnum;
+import com.yz.internalcommon.constant.IdentityConstant;
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.request.VerificationCodeDTO;
 import com.yz.internalcommon.response.NumberCodeResponse;
@@ -36,6 +37,9 @@ public class VerificationCodeService {
 
     //乘客验证码的前缀
     private String verificationCodePrefix = "passenger-verification-code-";
+
+    //token的前缀
+    private String tokenPrefix = "token-";
 
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
@@ -72,6 +76,16 @@ public class VerificationCodeService {
     }
 
     /**
+     * 根据手机号和身份标识生成tokenkey
+     * @param passengerPhone
+     * @param identity
+     * @return
+     */
+    private String generatorTokenKey(String passengerPhone,String identity){
+        return tokenPrefix+passengerPhone+"-"+identity;
+    }
+
+    /**
      * 校验验证码
      *
      * @param passengerPhone   手机号
@@ -103,7 +117,12 @@ public class VerificationCodeService {
         servicePassengerUserClient.loginOrRegister(verificationCodeDTO);
 
         //颁发令牌 不应该用魔法值，应该用常量
-        String token = JwtUtils.generatorToken(passengerPhone, PASSENGER_IDENTITY);
+        String token = JwtUtils.generatorToken(passengerPhone, IdentityConstant.PASSENGER_IDENTITY);
+        //将token存到redis中
+        String tokenKey = generatorTokenKey(passengerPhone, IdentityConstant.PASSENGER_IDENTITY);
+        stringRedisTemplate.opsForValue().set(tokenKey,token,30,TimeUnit.DAYS);
+
+
 
 
         //响应
