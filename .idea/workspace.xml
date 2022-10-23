@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/yz/servicepassengeruser/dto/PassengerUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/yz/servicepassengeruser/mapper/PassengerUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-passenger-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/yz/servicepassengeruser/ServicePassengerUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/yz/servicepassengeruser/ServicePassengerUserApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/yz/servicepassengeruser/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/yz/servicepassengeruser/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/src/main/resources/application.yml" afterDir="false" />
     </list>
@@ -181,7 +176,8 @@
       <workItem from="1666410062864" duration="40274000" />
       <workItem from="1666457048914" duration="189000" />
       <workItem from="1666457255983" duration="677000" />
-      <workItem from="1666457970502" duration="304000" />
+      <workItem from="1666457970502" duration="816000" />
+      <workItem from="1666492980511" duration="3806000" />
     </task>
     <servers />
   </component>
