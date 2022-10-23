@@ -1,8 +1,10 @@
 package com.yz.apipassenger.service;
 
+import com.yz.apipassenger.remote.ServicePassengerUserClient;
 import com.yz.apipassenger.remote.ServiceVerificationcodeClient;
 import com.yz.internalcommon.constant.CommonStatusEnum;
 import com.yz.internalcommon.dto.ResponseResult;
+import com.yz.internalcommon.request.VerificationCodeDTO;
 import com.yz.internalcommon.response.NumberCodeResponse;
 import com.yz.internalcommon.response.TokenResponse;
 import io.netty.util.internal.StringUtil;
@@ -25,6 +27,10 @@ public class VerificationCodeService {
 
     @Autowired
     private ServiceVerificationcodeClient serviceVerificationcodeClient;
+
+    @Autowired
+    private ServicePassengerUserClient servicePassengerUserClient;
+
     //乘客验证码的前缀
     private String verificationCodePrefix = "passenger-verification-code-";
 
@@ -89,7 +95,9 @@ public class VerificationCodeService {
         }
 
         //判断原来是否有用户，并进行对应的处理
-        System.out.println("判断原来是否有用户，并进行对应的处理");
+        VerificationCodeDTO verificationCodeDTO = new VerificationCodeDTO();
+        verificationCodeDTO.setPassengerPhone(passengerPhone);
+        servicePassengerUserClient.loginOrRegister(verificationCodeDTO);
 
         //颁发令牌
         System.out.println("颁发令牌");
