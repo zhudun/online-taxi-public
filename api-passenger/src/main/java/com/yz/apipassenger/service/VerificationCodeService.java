@@ -7,6 +7,7 @@ import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.request.VerificationCodeDTO;
 import com.yz.internalcommon.response.NumberCodeResponse;
 import com.yz.internalcommon.response.TokenResponse;
+import com.yz.internalcommon.util.JwtUtils;
 import io.netty.util.internal.StringUtil;
 import net.sf.json.JSONObject;
 import org.apache.commons.lang.StringUtils;
@@ -15,6 +16,8 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.TimeUnit;
+
+import static com.yz.internalcommon.constant.IdentityConstant.PASSENGER_IDENTITY;
 
 /**
  * @Author: yangzhen
@@ -99,8 +102,9 @@ public class VerificationCodeService {
         verificationCodeDTO.setPassengerPhone(passengerPhone);
         servicePassengerUserClient.loginOrRegister(verificationCodeDTO);
 
-        //颁发令牌
-        System.out.println("颁发令牌");
+        //颁发令牌 不应该用魔法值，应该用常量
+        String token = JwtUtils.generatorToken(passengerPhone, PASSENGER_IDENTITY);
+
 
         //响应
         TokenResponse tokenResponse = new TokenResponse();
