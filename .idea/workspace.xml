@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/interceptor/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/interceptor/JwtInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/interceptor/JwtInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/VerificationCodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/interceptor/InterceptorConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/interceptor/InterceptorConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/service/TokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/service/TokenService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/service/VerificationCodeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/service/VerificationCodeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/util/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/yz/servicepassengeruser/dto/PassengerUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/dto/PassengerUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/yz/servicepassengeruser/mapper/PassengerUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/yz/servicepassengeruser/mapper/PassengerUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/yz/servicepassengeruser/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/yz/servicepassengeruser/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +215,7 @@
       <workItem from="1666457255983" duration="677000" />
       <workItem from="1666457970502" duration="816000" />
       <workItem from="1666492980511" duration="25428000" />
-      <workItem from="1666585990084" duration="15520000" />
+      <workItem from="1666585990084" duration="17614000" />
     </task>
     <servers />
   </component>

@@ -1,12 +1,10 @@
 package com.yz.servicepassengeruser.service;
 
 import com.yz.internalcommon.dto.ResponseResult;
-import com.yz.internalcommon.request.VerificationCodeDTO;
-import com.yz.servicepassengeruser.dto.PassengerUser;
+import com.yz.internalcommon.dto.PassengerUser;
 import com.yz.servicepassengeruser.mapper.PassengerUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
