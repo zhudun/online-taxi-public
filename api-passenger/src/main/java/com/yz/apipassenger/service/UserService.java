@@ -1,10 +1,13 @@
 package com.yz.apipassenger.service;
 
+import com.yz.apipassenger.remote.ServicePassengerUserClient;
 import com.yz.internalcommon.dto.PassengerUser;
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.dto.TokenResult;
+import com.yz.internalcommon.request.VerificationCodeDTO;
 import com.yz.internalcommon.util.JwtUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,6 +19,8 @@ import org.springframework.stereotype.Service;
 @Service
 @Slf4j
 public class UserService {
+    @Autowired
+    private ServicePassengerUserClient servicePassengerUserClient;
 
     public ResponseResult getUserByAccessToken(String accessToken) {
         log.info("accessToken:" + accessToken);
@@ -25,12 +30,10 @@ public class UserService {
         log.info("手机号:" + phone);
 
         //根据手机号查询用户信息
-        PassengerUser passengerUser = new PassengerUser();
-        passengerUser.setPassengerName("yangzhen");
-        passengerUser.setProfilePhoto("头像");
+        ResponseResult<PassengerUser> userByPhone = servicePassengerUserClient.getUserByPhone(phone);
 
 
-        return ResponseResult.success(passengerUser);
+        return ResponseResult.success(userByPhone.getData());
 
     }
 }

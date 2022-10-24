@@ -1,8 +1,10 @@
 package com.yz.apipassenger.remote;
 
+import com.yz.internalcommon.dto.PassengerUser;
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.request.VerificationCodeDTO;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -17,4 +19,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public interface ServicePassengerUserClient {
     @RequestMapping(value = "/user",method = RequestMethod.POST)
     public ResponseResult loginOrRegister(@RequestBody VerificationCodeDTO verificationCodeDTO);
+    @RequestMapping(value = "/user/{passengerPhone}",method = RequestMethod.GET)
+    public ResponseResult<PassengerUser> getUserByPhone(@PathVariable("passengerPhone") String passengerPhone);
 }
