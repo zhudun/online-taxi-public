@@ -6,7 +6,7 @@ package com.yz.internalcommon.constant;
  * @Description: com.yz.internalcommon.constant
  * @version: 1.0
  */
-public class IdentityConstant {
+public class IdentityConstants {
 
     //乘客身份
     public static final String PASSENGER_IDENTITY = "1";
