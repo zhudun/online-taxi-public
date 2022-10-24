@@ -46,8 +46,8 @@ public class VerificationCodeService {
      */
     public ResponseResult generatorCode(String passengerPhone) {
         //调用验证码服务，获取验证码
-        ResponseResult<NumberCodeResponse> numberCodeResponse = serviceVerificationcodeClient.getNumberCode(6);
-        int numberCode = numberCodeResponse.getData().getNumberCode();
+        ResponseResult<NumberCodeResponse> responseResult = serviceVerificationcodeClient.getNumberCode(6);
+        int numberCode = responseResult.getData().getNumberCode();
 
         //key,value,过期时间
         String key = RedisPrefixUtils.generatorKeyByPhone(passengerPhone) ;
