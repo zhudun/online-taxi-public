@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/controller/ForeCastController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/ForecastPriceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/request/ForeCastPriceDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/response/ForecastPriceResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/controller/ForecastPriceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/ForecastPriceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-price/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-price/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
       <recent name="com.yz.internalcommon.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiPassengerApplication">
+  <component name="RunManager" selected="Spring Boot.ServicePriceApplication">
     <configuration name="JwtUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yz.internalcommon.util.JwtUtils" />
       <module name="internal-common" />
@@ -236,7 +236,7 @@
       <workItem from="1666457970502" duration="816000" />
       <workItem from="1666492980511" duration="25428000" />
       <workItem from="1666585990084" duration="26107000" />
-      <workItem from="1666668280212" duration="4767000" />
+      <workItem from="1666668280212" duration="6195000" />
     </task>
     <servers />
   </component>
