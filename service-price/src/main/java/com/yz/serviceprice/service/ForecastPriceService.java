@@ -1,8 +1,12 @@
 package com.yz.serviceprice.service;
 
 import com.yz.internalcommon.dto.ResponseResult;
+import com.yz.internalcommon.request.ForeCastPriceDTO;
+import com.yz.internalcommon.response.DirectionResponse;
 import com.yz.internalcommon.response.ForecastPriceResponse;
+import com.yz.serviceprice.remote.ServiceMapClient;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -14,6 +18,8 @@ import org.springframework.stereotype.Service;
 @Service
 @Slf4j
 public class ForecastPriceService {
+    @Autowired
+    private ServiceMapClient serviceMapClient;
 
     /**
      * 根据出发地和目的地经纬度  计算预估价
@@ -30,7 +36,15 @@ public class ForecastPriceService {
         log.info("到达地的经度:"+ destLongitude);
         log.info("到达地的经度:"+ destLatitude);
 
+        ForeCastPriceDTO foreCastPriceDTO = new ForeCastPriceDTO();
+        foreCastPriceDTO.setDepLatitude(depLatitude);
+        foreCastPriceDTO.setDepLongitude(depLongitude);
+        foreCastPriceDTO.setDestLatitude(destLatitude);
+        foreCastPriceDTO.setDestLongitude(destLongitude);
+
+
         log.info("调用地图服务，查询距离和时长");
+        ResponseResult<DirectionResponse> direction = serviceMapClient.direction(foreCastPriceDTO);
 
         log.info("调用计价规则");
 
@@ -40,7 +54,7 @@ public class ForecastPriceService {
         ForecastPriceResponse forecastPriceResponse = new ForecastPriceResponse();
         forecastPriceResponse.setPrice(12.35);
 
-        return ResponseResult.success(forecastPriceResponse);
+        return ResponseResult.success(direction);
 
     }
 
