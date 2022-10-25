@@ -1,13 +1,20 @@
 package com.yz.serviceprice.service;
 
+import com.yz.internalcommon.constant.CommonStatusEnum;
+import com.yz.internalcommon.dto.PriceRule;
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.request.ForeCastPriceDTO;
 import com.yz.internalcommon.response.DirectionResponse;
 import com.yz.internalcommon.response.ForecastPriceResponse;
+import com.yz.serviceprice.mapper.PriceRuleMapper;
 import com.yz.serviceprice.remote.ServiceMapClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: yangzhen
@@ -20,6 +27,9 @@ import org.springframework.stereotype.Service;
 public class ForecastPriceService {
     @Autowired
     private ServiceMapClient serviceMapClient;
+
+    @Autowired
+    private PriceRuleMapper priceRuleMapper;
 
     /**
      * 根据出发地和目的地经纬度  计算预估价
@@ -45,8 +55,19 @@ public class ForecastPriceService {
 
         log.info("调用地图服务，查询距离和时长");
         ResponseResult<DirectionResponse> direction = serviceMapClient.direction(foreCastPriceDTO);
+        Integer distance = direction.getData().getDistance();
+        Integer duration = direction.getData().getDuration();
+        log.info("距离："+distance+"时长："+duration);
 
         log.info("调用计价规则");
+        Map<String,Object> queryMap = new HashMap<>();
+        queryMap.put("city_code","110000");
+        queryMap.put("vehicle_type","1");
+        List<PriceRule> priceRules = priceRuleMapper.selectByMap(queryMap);
+        PriceRule priceRule = priceRules.get(0);
+        if(priceRules.size()==0){
+            return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_EMPITY.getCode(),CommonStatusEnum.PRICE_RULE_EMPITY.getMessage());
+        }
 
         log.info("根据距离，时长，计价规则，计算价格");
 

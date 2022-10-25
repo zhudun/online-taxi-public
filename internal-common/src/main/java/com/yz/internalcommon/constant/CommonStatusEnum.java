@@ -26,6 +26,11 @@ public enum CommonStatusEnum {
     USER_NOT_EXIST(1200,"当前用户不存在"),
 
     /**
+     * 计价规则：1300-1399
+     */
+    PRICE_RULE_EMPITY(1300,"计价规则不存在"),
+
+    /**
      * 成功
      */
     SUCCESS(1,"success"),
