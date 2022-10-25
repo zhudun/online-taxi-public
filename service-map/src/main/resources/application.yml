@@ -1,2 +1,6 @@
 server:
   port: 8094
+
+amap:
+  key: 7f9bbe63d9c6abcfa06c092b13a67f24
+
