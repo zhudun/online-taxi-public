@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/dto/PriceRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/mapper/PriceRuleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-price/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/ServicePriceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/ServicePriceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/dto/PriceRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/dto/PriceRule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/ForecastPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/ForecastPriceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-price/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,14 +73,14 @@
       <recent name="com.yz.internalcommon.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceMapApplication">
-    <configuration name="JwtUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yz.internalcommon.util.JwtUtils" />
-      <module name="internal-common" />
+  <component name="RunManager" selected="Spring Boot.ServicePriceApplication">
+    <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yz.serviceprice.service.ForecastPriceService" />
+      <module name="service-price" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yz.internalcommon.util.*" />
+          <option name="PATTERN" value="com.yz.serviceprice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,13 +88,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberCodeController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yz.serviceverificationcode.controller.NumberCodeController" />
-      <module name="service-verificationcode" />
+    <configuration name="JwtUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yz.internalcommon.util.JwtUtils" />
+      <module name="internal-common" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yz.serviceverificationcode.controller.*" />
+          <option name="PATTERN" value="com.yz.internalcommon.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,13 +122,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,23 +209,23 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.NumberCodeController" />
       <item itemvalue="Application.JwtUtils" />
       <item itemvalue="Application.UserController" />
       <item itemvalue="Spring Boot.InternalCommonApplication" />
       <item itemvalue="Spring Boot.ServiceVerificationcodeApplication" />
-      <item itemvalue="Spring Boot.ApiPassengerApplication" />
-      <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
       <item itemvalue="Spring Boot.ServicePriceApplication" />
       <item itemvalue="Spring Boot.ServiceMapApplication" />
+      <item itemvalue="Spring Boot.ApiPassengerApplication" />
+      <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
+      <item itemvalue="Application.ForecastPriceService" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
+        <item itemvalue="Application.ForecastPriceService" />
         <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
         <item itemvalue="Application.UserController" />
         <item itemvalue="Application.JwtUtils" />
-        <item itemvalue="Application.NumberCodeController" />
       </list>
     </recent_temporary>
   </component>
@@ -247,22 +244,12 @@
       <workItem from="1666457970502" duration="816000" />
       <workItem from="1666492980511" duration="25428000" />
       <workItem from="1666585990084" duration="26107000" />
-      <workItem from="1666668280212" duration="20690000" />
+      <workItem from="1666668280212" duration="21497000" />
+      <workItem from="1666755153220" duration="17640000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/ForecastPriceService.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
