@@ -9,6 +9,11 @@ package com.yz.internalcommon.constant;
 public class AmapConfigConstants {
 
     /**
+     * 行政地区查询
+     */
+    public static final String DISTRICT_URL = "https://restapi.amap.com/v3/config/district";
+
+    /**
      * 路径规划地址
      */
     public static final String DIRECTION_URL = "https://restapi.amap.com/v3/direction/driving";

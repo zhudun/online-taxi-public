@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/util/BigDecimalUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/ForecastPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/ForecastPriceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/dto/DicDistrict.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/controller/DicDistrictController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/mapper/DicDistrictMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/service/DicDistrictService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/AmapConfigConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/AmapConfigConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-map/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-map/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/ServiceMapApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/ServiceMapApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-map/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-map/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +80,7 @@
       <recent name="com.yz.internalcommon.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ForecastPriceService">
+  <component name="RunManager" selected="Spring Boot.ServiceMapApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yz.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -245,11 +252,27 @@
       <workItem from="1666492980511" duration="25428000" />
       <workItem from="1666585990084" duration="26107000" />
       <workItem from="1666668280212" duration="21497000" />
-      <workItem from="1666755153220" duration="29198000" />
+      <workItem from="1666755153220" duration="32715000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/controller/TestController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/controller/DicDistrictController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
