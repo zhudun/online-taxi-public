@@ -3,6 +3,7 @@ package com.yz.apipassenger.controller;
 import com.yz.apipassenger.service.ForecastPriceService;
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.request.ForeCastPriceDTO;
+import com.yz.internalcommon.response.ForecastPriceResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

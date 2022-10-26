@@ -1,8 +1,11 @@
 package com.yz.apipassenger.service;
 
+import com.yz.apipassenger.remote.ServicePriceClient;
 import com.yz.internalcommon.dto.ResponseResult;
+import com.yz.internalcommon.request.ForeCastPriceDTO;
 import com.yz.internalcommon.response.ForecastPriceResponse;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -14,6 +17,8 @@ import org.springframework.stereotype.Service;
 @Service
 @Slf4j
 public class ForecastPriceService {
+    @Autowired
+    private ServicePriceClient servicePriceClient;
 
     /**
      * 根据出发地和目的地经纬度  计算预估价
@@ -25,16 +30,25 @@ public class ForecastPriceService {
      */
     public ResponseResult forecastPrice(String depLongitude,String depLatitude,String destLongitude,String destLatitude){
 
+
+
         log.info("出发地的经度:"+ depLongitude);
         log.info("出发地的纬度:"+ depLatitude);
         log.info("到达地的经度:"+ destLongitude);
         log.info("到达地的经度:"+ destLatitude);
 
         log.info("调用计价服务，计算价格");
+        ForeCastPriceDTO foreCastPriceDTO = new ForeCastPriceDTO();
+        foreCastPriceDTO.setDepLongitude(depLongitude);
+        foreCastPriceDTO.setDepLatitude(depLatitude);
+        foreCastPriceDTO.setDestLongitude(destLongitude);
+        foreCastPriceDTO.setDestLatitude(destLatitude);
+        ResponseResult<ForecastPriceResponse> forecast = servicePriceClient.forecast(foreCastPriceDTO);
+        double price = forecast.getData().getPrice();
 
 
         ForecastPriceResponse forecastPriceResponse = new ForecastPriceResponse();
-        forecastPriceResponse.setPrice(12.35);
+        forecastPriceResponse.setPrice(price);
 
         return ResponseResult.success(forecastPriceResponse);
 
