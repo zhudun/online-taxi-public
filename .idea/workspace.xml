@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/remote/MapDicDistrictClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/AmapConfigConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/AmapConfigConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/service/DicDistrictService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/service/DicDistrictService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,15 +123,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -211,13 +210,13 @@
     <list>
       <item itemvalue="Application.JwtUtils" />
       <item itemvalue="Application.UserController" />
+      <item itemvalue="Application.ForecastPriceService" />
       <item itemvalue="Spring Boot.InternalCommonApplication" />
       <item itemvalue="Spring Boot.ServiceVerificationcodeApplication" />
       <item itemvalue="Spring Boot.ServicePriceApplication" />
       <item itemvalue="Spring Boot.ServiceMapApplication" />
       <item itemvalue="Spring Boot.ApiPassengerApplication" />
       <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
-      <item itemvalue="Application.ForecastPriceService" />
     </list>
     <recent_temporary>
       <list>
@@ -245,7 +244,8 @@
       <workItem from="1666492980511" duration="25428000" />
       <workItem from="1666585990084" duration="26107000" />
       <workItem from="1666668280212" duration="21497000" />
-      <workItem from="1666755153220" duration="34031000" />
+      <workItem from="1666755153220" duration="34653000" />
+      <workItem from="1666836673937" duration="26679000" />
     </task>
     <servers />
   </component>
@@ -261,19 +261,9 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/remote/MapDicDistrictClient.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/controller/DicDistrictController.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/service/DicDistrictService.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="28" />
+          <line>62</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

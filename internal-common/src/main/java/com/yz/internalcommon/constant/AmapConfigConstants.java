@@ -20,9 +20,34 @@ public class AmapConfigConstants {
 
 
     /**
-     * 路径规划 json key值
+     * 路径规划 json status值
      */
     public static final String STATUS = "status";
+
+    /**
+     * 路径规划 json 地区值
+     */
+    public static final String DISTRICTS = "districts";
+
+    /**
+     * 路径规划 json 地区邮政编码
+     */
+    public static final String ADCODE = "adcode";
+
+    /**
+     * 路径规划 json 地区名称
+     */
+    public static final String NAME = "name";
+
+    /**
+     * 路径规划 json 地区等级
+     */
+    public static final String LEVEL = "level";
+
+    /**
+     * 路径规划 json 地区街道
+     */
+    public static final String STREET = "street";
 
 
     /**
