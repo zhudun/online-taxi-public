@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/AmapConfigConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/AmapConfigConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/dto/DriverUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/mapper/DriverUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/DriverUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/端口管理.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/service/DicDistrictService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/service/DicDistrictService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,9 +65,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../msb/项目/2022网约车/online-taxi-2022-public-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.30114943" />
     <property name="settings.editor.selected.configurable" value="Console" />
   </component>
   <component name="ReactorSettings">
@@ -74,7 +78,7 @@
       <recent name="com.yz.internalcommon.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceMapApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceDriverUserApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yz.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -162,6 +166,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceDriverUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-driver-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yz.servicedriveruser.ServiceDriverUserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServiceMapApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service-map" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yz.servicemap.ServiceMapApplication" />
@@ -215,6 +226,7 @@
       <item itemvalue="Spring Boot.ServiceVerificationcodeApplication" />
       <item itemvalue="Spring Boot.ServicePriceApplication" />
       <item itemvalue="Spring Boot.ServiceMapApplication" />
+      <item itemvalue="Spring Boot.ServiceDriverUserApplication" />
       <item itemvalue="Spring Boot.ApiPassengerApplication" />
       <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
     </list>
@@ -245,7 +257,9 @@
       <workItem from="1666585990084" duration="26107000" />
       <workItem from="1666668280212" duration="21497000" />
       <workItem from="1666755153220" duration="34653000" />
-      <workItem from="1666836673937" duration="26679000" />
+      <workItem from="1666836673937" duration="28290000" />
+      <workItem from="1666941008332" duration="1298000" />
+      <workItem from="1666942334611" duration="2313000" />
     </task>
     <servers />
   </component>
@@ -259,11 +273,6 @@
           <url>file://$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/controller/TestController.java</url>
           <line>31</line>
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/service/DicDistrictService.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
