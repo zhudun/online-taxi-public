@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/remote/ServiceDriverUserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-driver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/ApiDriverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/ApiDriverApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-driver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/generator/MysqlGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-driver-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -80,7 +76,7 @@
       <recent name="com.yz.internalcommon.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiDriverApplication">
+  <component name="RunManager" selected="Application.MysqlGenerator">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yz.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -95,13 +91,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JwtUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yz.internalcommon.util.JwtUtils" />
-      <module name="internal-common" />
+    <configuration name="MysqlGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yz.servicedriveruser.generator.MysqlGenerator" />
+      <module name="service-driver-user" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yz.internalcommon.util.*" />
+          <option name="PATTERN" value="com.yz.servicedriveruser.generator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -235,7 +231,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JwtUtils" />
       <item itemvalue="Application.UserController" />
       <item itemvalue="Application.ForecastPriceService" />
       <item itemvalue="Spring Boot.InternalCommonApplication" />
@@ -247,14 +242,15 @@
       <item itemvalue="Spring Boot.ApiDriverApplication" />
       <item itemvalue="Spring Boot.ApiPassengerApplication" />
       <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
+      <item itemvalue="Application.MysqlGenerator" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MysqlGenerator" />
         <item itemvalue="Application.ForecastPriceService" />
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
         <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
         <item itemvalue="Application.UserController" />
-        <item itemvalue="Application.JwtUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -281,7 +277,7 @@
       <workItem from="1667269201394" duration="4626000" />
       <workItem from="1667546500262" duration="5317000" />
       <workItem from="1667551888116" duration="667000" />
-      <workItem from="1667552577511" duration="1447000" />
+      <workItem from="1667552577511" duration="3080000" />
     </task>
     <servers />
   </component>
