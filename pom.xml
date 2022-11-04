@@ -22,6 +22,7 @@
         <module>service-map</module>
         <module>service-driver-user</module>
         <module>api-boss</module>
+        <module>api-driver</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -42,15 +43,16 @@
             <artifactId>lombok</artifactId>
             <version>1.18.6</version>
         </dependency>
-        <dependency>
-            <groupId>com.yz</groupId>
-            <artifactId>internal-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+
         <dependency>
             <groupId>com.auth0</groupId>
             <artifactId>java-jwt</artifactId>
             <version>3.14.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yz</groupId>
+            <artifactId>internal-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/clients/DriverUserCilent.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/clients/DriverUserCilent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/controller/DriverUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/controller/DriverUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/service/DriverUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/service/DriverUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-boss/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-boss/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/端口管理.md" beforeDir="false" afterPath="$PROJECT_DIR$/端口管理.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +44,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
   <component name="ProjectId" id="2GRNxQgkGX1XW09icLhkQVacMwo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -64,7 +68,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.30114943" />
-    <property name="settings.editor.selected.configurable" value="Console" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -74,7 +78,7 @@
       <recent name="com.yz.internalcommon.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiBossApplication">
+  <component name="RunManager" selected="Spring Boot.ApiDriverApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yz.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -144,6 +148,13 @@
     <configuration name="ApiBossApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="api-boss" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yz.apiboss.ApiBossApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiDriverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="api-driver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yz.apidriver.ApiDriverApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -231,6 +242,7 @@
       <item itemvalue="Spring Boot.ServiceMapApplication" />
       <item itemvalue="Spring Boot.ServiceDriverUserApplication" />
       <item itemvalue="Spring Boot.ApiBossApplication" />
+      <item itemvalue="Spring Boot.ApiDriverApplication" />
       <item itemvalue="Spring Boot.ApiPassengerApplication" />
       <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
     </list>
@@ -265,7 +277,9 @@
       <workItem from="1666941008332" duration="1298000" />
       <workItem from="1666942334611" duration="3183000" />
       <workItem from="1667269201394" duration="4626000" />
-      <workItem from="1667546500262" duration="2532000" />
+      <workItem from="1667546500262" duration="5317000" />
+      <workItem from="1667551888116" duration="667000" />
+      <workItem from="1667552577511" duration="339000" />
     </task>
     <servers />
   </component>
