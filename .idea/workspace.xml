@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/clients/DriverUserCilent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/controller/DriverUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/service/DriverUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-boss/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-boss/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/ApiBossApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/ApiBossApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/DriverUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/DriverUserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +264,7 @@
       <workItem from="1666941008332" duration="1298000" />
       <workItem from="1666942334611" duration="3183000" />
       <workItem from="1667269201394" duration="4626000" />
-      <workItem from="1667546500262" duration="1011000" />
+      <workItem from="1667546500262" duration="2133000" />
     </task>
     <servers />
   </component>
