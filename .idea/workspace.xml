@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/clients/DriverUserCilent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/controller/DriverUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/service/DriverUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-boss/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-boss/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/ApiBossApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/ApiBossApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-boss/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-boss/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/端口管理.md" beforeDir="false" afterPath="$PROJECT_DIR$/端口管理.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
       <recent name="com.yz.internalcommon.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiBossApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceDriverUserApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yz.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -125,15 +125,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -234,9 +232,9 @@
       <item itemvalue="Spring Boot.ServicePriceApplication" />
       <item itemvalue="Spring Boot.ServiceMapApplication" />
       <item itemvalue="Spring Boot.ServiceDriverUserApplication" />
+      <item itemvalue="Spring Boot.ApiBossApplication" />
       <item itemvalue="Spring Boot.ApiPassengerApplication" />
       <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
-      <item itemvalue="Spring Boot.ApiBossApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -268,7 +266,8 @@
       <workItem from="1666836673937" duration="28290000" />
       <workItem from="1666941008332" duration="1298000" />
       <workItem from="1666942334611" duration="3183000" />
-      <workItem from="1667269201394" duration="3867000" />
+      <workItem from="1667269201394" duration="4626000" />
+      <workItem from="1667546500262" duration="1011000" />
     </task>
     <servers />
   </component>

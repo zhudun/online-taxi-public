@@ -1,11 +1,8 @@
-package com.yz.servicedriveruser.controller;
+package com.yz.apiboss.controller;
 
+import com.yz.apiboss.service.DriverUserService;
 import com.yz.internalcommon.dto.DriverUser;
 import com.yz.internalcommon.dto.ResponseResult;
-import com.yz.servicedriveruser.mapper.DriverUserMapper;
-import com.yz.servicedriveruser.service.DriverUserService;
-import lombok.extern.slf4j.Slf4j;
-import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,24 +10,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Author: yangzhen
- * @Date 2022/11/1-12:37
- * @Description: com.yz.servicedriveruser.controller
+ * @Date 2022/11/4-15:23
+ * @Description: com.yz.apiboss.controller
  * @version: 1.0
  */
 @RestController
-@Slf4j
-public class UserController {
+public class DriverUserController {
 
     @Autowired
     private DriverUserService driverUserService;
 
-    @PostMapping("/user")
-    public ResponseResult addUser(@RequestBody DriverUser driverUser){
-        log.info(JSONObject.fromObject(driverUser).toString());
+    @PostMapping("/driver-user")
+    public ResponseResult addDriverUser(@RequestBody DriverUser driverUser){
         return driverUserService.addDriverUser(driverUser);
     }
-
-
-
-
 }
