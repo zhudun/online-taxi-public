@@ -21,4 +21,8 @@ public class DriverUserService {
     public ResponseResult addDriverUser(DriverUser driverUser){
         return driverUserClient.addDriverUser(driverUser);
     }
+
+    public ResponseResult updateDriverUser(DriverUser driverUser){
+        return driverUserClient.updateDriverUser(driverUser);
+    }
 }

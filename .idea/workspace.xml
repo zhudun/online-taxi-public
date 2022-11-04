@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/DriverUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/DriverUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/clients/DriverUserCilent.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/clients/DriverUserCilent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/controller/DriverUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/controller/DriverUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/service/DriverUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-boss/src/main/java/com/yz/apiboss/service/DriverUserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,7 @@
       <recent name="com.yz.internalcommon.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceDriverUserApplication">
+  <component name="RunManager" selected="Spring Boot.ApiBossApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yz.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -264,7 +265,7 @@
       <workItem from="1666941008332" duration="1298000" />
       <workItem from="1666942334611" duration="3183000" />
       <workItem from="1667269201394" duration="4626000" />
-      <workItem from="1667546500262" duration="2133000" />
+      <workItem from="1667546500262" duration="2532000" />
     </task>
     <servers />
   </component>
