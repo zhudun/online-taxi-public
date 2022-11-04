@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/generator/MysqlGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-driver-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/DriverCarConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/DriverCarBindingRelationshipService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/dto/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/dto/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/controller/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/generator/MysqlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/generator/MysqlGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +82,7 @@
       <recent name="com.yz.internalcommon.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MysqlGenerator">
+  <component name="RunManager" selected="Spring Boot.ServiceDriverUserApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yz.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -277,7 +283,7 @@
       <workItem from="1667269201394" duration="4626000" />
       <workItem from="1667546500262" duration="5317000" />
       <workItem from="1667551888116" duration="667000" />
-      <workItem from="1667552577511" duration="3080000" />
+      <workItem from="1667552577511" duration="9267000" />
     </task>
     <servers />
   </component>
