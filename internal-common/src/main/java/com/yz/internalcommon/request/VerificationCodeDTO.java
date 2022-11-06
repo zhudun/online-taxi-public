@@ -15,4 +15,6 @@ public class VerificationCodeDTO {
 
     private String verificationCode;
 
+    private String driverPhone;
+
 }
