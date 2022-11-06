@@ -1,6 +1,8 @@
 package com.yz.apiboss.controller;
 
+import com.yz.apiboss.service.CarService;
 import com.yz.apiboss.service.DriverUserService;
+import com.yz.internalcommon.dto.Car;
 import com.yz.internalcommon.dto.DriverUser;
 import com.yz.internalcommon.dto.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,5 +31,13 @@ public class DriverUserController {
     @PutMapping("/driver-user")
     public ResponseResult updateDriverUser(@RequestBody DriverUser driverUser){
         return driverUserService.updateDriverUser(driverUser);
+    }
+
+    @Autowired
+    private CarService carService;
+
+    @PostMapping("/car")
+    public ResponseResult addCar(@RequestBody Car car){
+        return carService.addCar(car);
     }
 }

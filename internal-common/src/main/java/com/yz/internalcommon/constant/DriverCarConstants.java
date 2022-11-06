@@ -16,5 +16,5 @@ public class DriverCarConstants {
     /**
      * 司机车辆关系解绑：2
      */
-    public static int DRIVER_CAR_UNBIND = 1;
+    public static int DRIVER_CAR_UNBIND = 2;
 }

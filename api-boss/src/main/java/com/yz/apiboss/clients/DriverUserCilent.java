@@ -1,5 +1,6 @@
 package com.yz.apiboss.clients;
 
+import com.yz.internalcommon.dto.Car;
 import com.yz.internalcommon.dto.DriverUser;
 import com.yz.internalcommon.dto.ResponseResult;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -23,5 +24,7 @@ public interface DriverUserCilent {
     @RequestMapping(method = RequestMethod.PUT,value = "/user")
     public ResponseResult updateDriverUser(@RequestBody DriverUser driverUser);
 
+    @RequestMapping(method = RequestMethod.POST,value = "/car")
+    public ResponseResult addCar(@RequestBody Car car);
 
 }

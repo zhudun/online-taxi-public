@@ -29,7 +29,12 @@ public class DriverCarBindingRelationshipController {
 
     @PostMapping("/bind")
     public ResponseResult bind(@RequestBody DriverCarBindingRelationship driverCarBindingRelationship){
-        return driverCarBindingRelationshipService.bing(driverCarBindingRelationship);
+        return driverCarBindingRelationshipService.bind(driverCarBindingRelationship);
+    }
+
+    @PostMapping("/unbind")
+    public ResponseResult unbind(@RequestBody DriverCarBindingRelationship driverCarBindingRelationship){
+        return driverCarBindingRelationshipService.unbind(driverCarBindingRelationship);
     }
 
 }

@@ -11,6 +11,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: yangzhen
@@ -24,8 +27,8 @@ public class DriverCarBindingRelationshipService {
     @Autowired
     private DriverCarBindingRelationshipMapper driverCarBindingRelationshipMapper;
 
-    public ResponseResult bing(DriverCarBindingRelationship driverCarBindingRelationship){
-        //判断 如果司机和车辆已经做过绑定，则不允许再次绑定
+    public ResponseResult bind(DriverCarBindingRelationship driverCarBindingRelationship){
+        //判断 如果司机和车辆已经做过绑定，则不允许再次绑
         QueryWrapper<DriverCarBindingRelationship> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("driver_id",driverCarBindingRelationship.getDriverId());
         queryWrapper.eq("car_id",driverCarBindingRelationship.getCarId());
@@ -62,6 +65,26 @@ public class DriverCarBindingRelationshipService {
         driverCarBindingRelationship.setBindState(DriverCarConstants.DRIVER_CAR_BIND);
 
         driverCarBindingRelationshipMapper.insert(driverCarBindingRelationship);
+        return ResponseResult.success("");
+    }
+
+    public ResponseResult unbind(DriverCarBindingRelationship driverCarBindingRelationship){
+        LocalDateTime now = LocalDateTime.now();
+
+        Map<String,Object> map = new HashMap<>();
+        map.put("driver_id",driverCarBindingRelationship.getDriverId());
+        map.put("car_id",driverCarBindingRelationship.getCarId());
+        map.put("bind_state",DriverCarConstants.DRIVER_CAR_BIND);
+
+        List<DriverCarBindingRelationship> driverCarBindingRelationships = driverCarBindingRelationshipMapper.selectByMap(map);
+        if (driverCarBindingRelationships.isEmpty()) {
+            return ResponseResult.fail(CommonStatusEnum.DRIVER_CAR_BIND_NOT_EXISTS.getCode(),CommonStatusEnum.DRIVER_CAR_BIND_NOT_EXISTS.getMessage());
+        }
+        DriverCarBindingRelationship relationship = driverCarBindingRelationships.get(0);
+        relationship.setBindState(DriverCarConstants.DRIVER_CAR_UNBIND);
+        relationship.setUnBindingTime(now);
+
+        driverCarBindingRelationshipMapper.updateById(relationship);
         return ResponseResult.success("");
     }
 
