@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/remote/ServiceVerificationCodeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-driver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/VerificationCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/VerificationCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/service/VerificationCodeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/service/VerificationCodeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/util/RedisPrefixUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/util/RedisPrefixUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-verificationcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-verificationcode/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +80,7 @@
       <recent name="com.yz.internalcommon.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceVerificationcodeApplication">
+  <component name="RunManager" selected="Spring Boot.ApiDriverApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yz.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -246,10 +250,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
+        <item itemvalue="Spring Boot.ApiPassengerApplication" />
         <item itemvalue="Application.MysqlGenerator" />
         <item itemvalue="Application.ForecastPriceService" />
-        <item itemvalue="Spring Boot.ApiPassengerApplication" />
-        <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
         <item itemvalue="Application.UserController" />
       </list>
     </recent_temporary>
@@ -279,7 +283,7 @@
       <workItem from="1667551888116" duration="667000" />
       <workItem from="1667552577511" duration="9267000" />
       <workItem from="1667700321791" duration="11831000" />
-      <workItem from="1667846015127" duration="3100000" />
+      <workItem from="1667846015127" duration="4938000" />
     </task>
     <servers />
   </component>

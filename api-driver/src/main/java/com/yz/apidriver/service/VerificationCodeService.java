@@ -4,12 +4,18 @@ import com.yz.apidriver.remote.ServiceDriverUserClient;
 import com.yz.apidriver.remote.ServiceVerificationCodeClient;
 import com.yz.internalcommon.constant.CommonStatusEnum;
 import com.yz.internalcommon.constant.DriverCarConstants;
+import com.yz.internalcommon.constant.IdentityConstants;
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.response.DriverUserExistsResponse;
 import com.yz.internalcommon.response.NumberCodeResponse;
+import com.yz.internalcommon.util.RedisPrefixUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Author: yangzhen
@@ -26,6 +32,9 @@ public class VerificationCodeService {
 
     @Autowired
     ServiceVerificationCodeClient serviceVerificationCodeClient;
+
+    @Autowired
+    StringRedisTemplate stringRedisTemplate;
 
     public ResponseResult checkAndSendVerificationCode(String driverPhone){
         //查询service-driver-user，该手机号的司机是否存在
@@ -46,6 +55,10 @@ public class VerificationCodeService {
         //调用第三方发送验证码
 
         //存入redis
+        String key = RedisPrefixUtils.generatorKeyByPhone(driverPhone, IdentityConstants.DRIVER_IDENTITY);
+        stringRedisTemplate.opsForValue().set(key,numberCode+"",2, TimeUnit.MINUTES);
+
+
 
         return ResponseResult.success("");
     }
