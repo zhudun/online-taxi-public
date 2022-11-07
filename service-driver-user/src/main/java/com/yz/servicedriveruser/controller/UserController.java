@@ -1,16 +1,15 @@
 package com.yz.servicedriveruser.controller;
 
+import com.yz.internalcommon.constant.DriverCarConstants;
 import com.yz.internalcommon.dto.DriverUser;
 import com.yz.internalcommon.dto.ResponseResult;
+import com.yz.internalcommon.response.DriverUserExistsResponse;
 import com.yz.servicedriveruser.mapper.DriverUserMapper;
 import com.yz.servicedriveruser.service.DriverUserService;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Author: yangzhen
@@ -34,6 +33,27 @@ public class UserController {
     @PutMapping("/user")
     public ResponseResult updateUser(@RequestBody DriverUser driverUser){
         return driverUserService.updateDriverUser(driverUser);
+    }
+
+    @GetMapping("/check-driver/{driverPhone}")
+    public ResponseResult getUser(@PathVariable("driverPhone") String driverPhone){
+
+        ResponseResult<DriverUser> driverUserByPhone = driverUserService.getDriverUserByPhone(driverPhone);
+        DriverUser driverUserDb = driverUserByPhone.getData();
+        DriverUserExistsResponse driverUserExistsResponse = new DriverUserExistsResponse();
+        int ifExists = DriverCarConstants.DRIVER_EXISTS;
+        if(driverUserDb == null){
+            ifExists = DriverCarConstants.DRIVER_NOT_EXISTS;
+            driverUserExistsResponse.setDriverPhone(driverPhone);
+            driverUserExistsResponse.setIfExists(ifExists);
+        }else{
+            driverUserExistsResponse.setDriverPhone(driverUserDb.getDriverPhone());
+            driverUserExistsResponse.setIfExists(ifExists);
+        }
+
+
+
+        return ResponseResult.success(driverUserExistsResponse);
     }
 
 
