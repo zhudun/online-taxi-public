@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/interceptor/InterceptorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/interceptor/JwtInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/dto/DriverUserWorkStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/response/ServiceResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/controller/ServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/remote/ServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/service/ServiceFromMapService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-map/地图信息" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/VerificationCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/VerificationCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/VerificationCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/response/TerminalResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/controller/TerminalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/remote/TerminalClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/service/TerminalService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/AmapConfigConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/AmapConfigConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/DriverCarConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/DriverCarConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/generator/MysqlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/generator/MysqlGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/DriverUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/DriverUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-map/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-map/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,7 +289,7 @@
       <workItem from="1667552577511" duration="9267000" />
       <workItem from="1667700321791" duration="11831000" />
       <workItem from="1667846015127" duration="13885000" />
-      <workItem from="1667938805615" duration="655000" />
+      <workItem from="1667938805615" duration="2055000" />
     </task>
     <servers />
   </component>
