@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api-driver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/interceptor/InterceptorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/interceptor/JwtInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/dto/DriverUserWorkStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/response/ServiceResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/controller/ServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/remote/ServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/service/ServiceFromMapService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-map/地图信息" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/VerificationCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/VerificationCodeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/VerificationCodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/VerificationCodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/service/VerificationCodeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/yz/apipassenger/service/VerificationCodeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/util/RedisPrefixUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/util/RedisPrefixUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-verificationcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-verificationcode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/AmapConfigConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/AmapConfigConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/DriverCarConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/DriverCarConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/generator/MysqlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/generator/MysqlGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/DriverUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/DriverUserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +85,14 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\simpleProject\online-taxi-public\api-driver\src\main\java\com\yz\apidriver" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.yz.internalcommon.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiDriverApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceMapApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yz.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -129,13 +141,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -250,9 +264,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MysqlGenerator" />
         <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
-        <item itemvalue="Application.MysqlGenerator" />
         <item itemvalue="Application.ForecastPriceService" />
         <item itemvalue="Application.UserController" />
       </list>
@@ -283,7 +297,8 @@
       <workItem from="1667551888116" duration="667000" />
       <workItem from="1667552577511" duration="9267000" />
       <workItem from="1667700321791" duration="11831000" />
-      <workItem from="1667846015127" duration="4938000" />
+      <workItem from="1667846015127" duration="13885000" />
+      <workItem from="1667938805615" duration="655000" />
     </task>
     <servers />
   </component>

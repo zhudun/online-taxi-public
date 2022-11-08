@@ -1,0 +1,21 @@
+服务创建
+{
+    "data": {
+        "name": "出行service",
+        "sid": 821617
+    },
+    "errcode": 10000,
+    "errdetail": null,
+    "errmsg": "OK"
+}
+终端创建
+{
+    "data": {
+        "name": "车辆1",
+        "tid": 597049117,
+        "sid": 821617
+    },
+    "errcode": 10000,
+    "errdetail": null,
+    "errmsg": "OK"
+}

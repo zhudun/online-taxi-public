@@ -3,8 +3,10 @@ package com.yz.servicedriveruser.service;
 import com.yz.internalcommon.constant.CommonStatusEnum;
 import com.yz.internalcommon.constant.DriverCarConstants;
 import com.yz.internalcommon.dto.DriverUser;
+import com.yz.internalcommon.dto.DriverUserWorkStatus;
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.servicedriveruser.mapper.DriverUserMapper;
+import com.yz.servicedriveruser.mapper.DriverUserWorkStatusMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +28,9 @@ public class DriverUserService {
     @Autowired
     private DriverUserMapper driverUserMapper;
 
+    @Autowired
+    DriverUserWorkStatusMapper driverUserWorkStatusMapper;
+
 
     public ResponseResult testGetDriverUser(){
         DriverUser driverUser = driverUserMapper.selectById("1");
@@ -36,7 +41,16 @@ public class DriverUserService {
         LocalDateTime now = LocalDateTime.now();
         driverUser.setGmtCreate(now);
         driverUser.setGmtModified(now);
+
         driverUserMapper.insert(driverUser);
+        //初始化司机工作状态表
+        DriverUserWorkStatus driverUserWorkStatus = new DriverUserWorkStatus();
+        driverUserWorkStatus.setDriverId(driverUser.getId());
+        driverUserWorkStatus.setWorkStatus(DriverCarConstants.DRIVER_WORK_STATUS_STOP);
+        driverUserWorkStatus.setGmtCreate(now);
+        driverUserWorkStatus.setGmtModified(now);
+        driverUserWorkStatusMapper.insert(driverUserWorkStatus);
+
         return ResponseResult.success("");
     }
 
