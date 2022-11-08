@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/response/TrackResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/controller/TrackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/remote/TrackClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/service/TrackService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/AmapConfigConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/AmapConfigConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/dto/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/dto/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/remote/ServiceMapClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/remote/ServiceMapClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/CarService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,7 +286,7 @@
       <workItem from="1667552577511" duration="9267000" />
       <workItem from="1667700321791" duration="11831000" />
       <workItem from="1667846015127" duration="13885000" />
-      <workItem from="1667938805615" duration="5210000" />
+      <workItem from="1667938805615" duration="6442000" />
     </task>
     <servers />
   </component>
@@ -302,11 +300,6 @@
           <url>file://$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/controller/TestController.java</url>
           <line>31</line>
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/remote/TrackClient.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
