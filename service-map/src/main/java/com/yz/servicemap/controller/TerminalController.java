@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * @Author: yangzhen
  * @Date 2022/11/9-4:50
@@ -26,7 +28,11 @@ public class TerminalController {
         return terminalService.add(name , desc);
     }
 
+    @PostMapping("/aroundsearch")
+    public ResponseResult<List<TerminalResponse>> aroundsearch(String center , Integer radius){
 
+        return terminalService.aroundsearch(center,radius);
+    }
 
 
 }

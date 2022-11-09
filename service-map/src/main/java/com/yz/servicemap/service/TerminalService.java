@@ -6,6 +6,8 @@ import com.yz.servicemap.remote.TerminalClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @Author: yangzhen
  * @Date 2022/11/9-4:51
@@ -23,6 +25,9 @@ public class TerminalService {
         return terminalClient.add(name , desc);
     }
 
+    public ResponseResult<List<TerminalResponse>> aroundsearch(String center, Integer radius){
 
+        return terminalClient.aroundsearch(center,radius);
+    }
 
 }
