@@ -3,7 +3,7 @@ server:
 
 amap:
   key: 7f9bbe63d9c6abcfa06c092b13a67f24
-  #服务id  服务名称：测试服务1
+  #服务id  服务名称：出行service
   sid: 822097
 spring:
   application:
