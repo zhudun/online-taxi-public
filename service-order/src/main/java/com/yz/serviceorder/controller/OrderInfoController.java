@@ -40,7 +40,7 @@ public class OrderInfoController {
     //        orderRequest.setDeviceCode(deviceCode);
 
         log.info("service-order"+orderRequest.getAddress());
-        return null;
+        return orderInfoService.add(orderRequest);
     }
 
 

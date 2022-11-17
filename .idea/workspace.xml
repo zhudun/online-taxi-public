@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/controller/OrderInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/controller/OrderInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,7 +306,7 @@
       <workItem from="1667997230784" duration="596000" />
       <workItem from="1668238319783" duration="2251000" />
       <workItem from="1668669818585" duration="2250000" />
-      <workItem from="1668674176879" duration="1869000" />
+      <workItem from="1668674176879" duration="2859000" />
     </task>
     <servers />
   </component>
