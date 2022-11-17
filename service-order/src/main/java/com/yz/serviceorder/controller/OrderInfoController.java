@@ -43,10 +43,7 @@ public class OrderInfoController {
         return null;
     }
 
-    @GetMapping("/testMapper")
-    public String testMapper(){
-        return orderInfoService.testMapper();
-    }
+
 
 
 }

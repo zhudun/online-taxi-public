@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/generator/MysqlGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/ServiceOrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/ServiceOrderApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/controller/OrderInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/controller/OrderInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-order/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +305,7 @@
       <workItem from="1667997230784" duration="596000" />
       <workItem from="1668238319783" duration="2251000" />
       <workItem from="1668669818585" duration="2250000" />
-      <workItem from="1668674176879" duration="1556000" />
+      <workItem from="1668674176879" duration="1869000" />
     </task>
     <servers />
   </component>
