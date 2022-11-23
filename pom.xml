@@ -50,11 +50,7 @@
             <artifactId>java-jwt</artifactId>
             <version>3.14.0</version>
         </dependency>
-        <dependency>
-            <groupId>com.yz</groupId>
-            <artifactId>internal-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+
     </dependencies>
 
     <dependencyManagement>
