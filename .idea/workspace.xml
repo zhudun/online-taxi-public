@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/OrderConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/controller/PriceRuleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/PriceRuleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/dto/PriceRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/dto/PriceRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/PriceRuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/PriceRuleService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,13 +142,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -320,7 +319,8 @@
       <workItem from="1669341643293" duration="97000" />
       <workItem from="1669708286165" duration="1232000" />
       <workItem from="1669709550064" duration="745000" />
-      <workItem from="1669710323876" duration="3187000" />
+      <workItem from="1669710323876" duration="10901000" />
+      <workItem from="1669721413267" duration="1472000" />
     </task>
     <servers />
   </component>
@@ -347,6 +347,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
