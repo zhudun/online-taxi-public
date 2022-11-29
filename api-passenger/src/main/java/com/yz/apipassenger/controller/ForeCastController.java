@@ -28,6 +28,8 @@ public class ForeCastController {
         String depLatitude = foreCastPriceDTO.getDepLatitude();
         String destLongitude = foreCastPriceDTO.getDestLongitude();
         String destLatitude = foreCastPriceDTO.getDestLatitude();
+        String cityCode = foreCastPriceDTO.getCityCode();
+        String vehicleType = foreCastPriceDTO.getVehicleType();
 
 
         log.info("出发地的经度:"+ depLongitude);
@@ -37,6 +39,6 @@ public class ForeCastController {
 
 
 
-        return forecastPriceService.forecastPrice(depLongitude,depLatitude,destLongitude,destLatitude);
+        return forecastPriceService.forecastPrice(depLongitude,depLatitude,destLongitude,destLatitude,cityCode,vehicleType);
     }
 }

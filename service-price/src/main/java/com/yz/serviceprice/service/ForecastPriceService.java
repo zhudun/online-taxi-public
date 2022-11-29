@@ -1,5 +1,6 @@
 package com.yz.serviceprice.service;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.yz.internalcommon.constant.CommonStatusEnum;
 import com.yz.internalcommon.dto.PriceRule;
 import com.yz.internalcommon.dto.ResponseResult;
@@ -42,7 +43,7 @@ public class ForecastPriceService {
      * @param destLatitude
      * @return
      */
-    public ResponseResult forecastPrice(String depLongitude,String depLatitude,String destLongitude,String destLatitude){
+    public ResponseResult forecastPrice(String depLongitude,String depLatitude,String destLongitude,String destLatitude,String cityCode,String vehicleType){
 
         log.info("出发地的经度:"+ depLongitude);
         log.info("出发地的纬度:"+ depLatitude);
@@ -63,10 +64,14 @@ public class ForecastPriceService {
         log.info("距离："+distance+"时长："+duration);
 
         log.info("调用计价规则");
-        Map<String,Object> queryMap = new HashMap<>();
-        queryMap.put("city_code","110000");
-        queryMap.put("vehicle_type","1");
-        List<PriceRule> priceRules = priceRuleMapper.selectByMap(queryMap);
+
+        QueryWrapper wrapper = new QueryWrapper();
+        wrapper.eq("city_code",cityCode);
+        wrapper.eq("vehicle_type",vehicleType);
+        wrapper.orderByDesc("fare_version");
+
+        List<PriceRule> priceRules = priceRuleMapper.selectList(wrapper);
+
         PriceRule priceRule = priceRules.get(0);
         if(priceRules.size()==0){
             return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_EMPITY.getCode(),CommonStatusEnum.PRICE_RULE_EMPITY.getMessage());
@@ -78,6 +83,8 @@ public class ForecastPriceService {
 
         ForecastPriceResponse forecastPriceResponse = new ForecastPriceResponse();
         forecastPriceResponse.setPrice(price);
+        forecastPriceResponse.setCityCode(cityCode);
+        forecastPriceResponse.setVehicleType(vehicleType);
         log.info("price"+price);
 
         return ResponseResult.success(forecastPriceResponse);

@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/PriceRuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/PriceRuleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/controller/ForeCastController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/controller/ForeCastController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/ForecastPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/ForecastPriceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/request/ForeCastPriceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/request/ForeCastPriceDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/response/ForecastPriceResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/response/ForecastPriceResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/controller/ForecastPriceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/controller/ForecastPriceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/ForecastPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/ForecastPriceService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +97,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServicePriceApplication">
+  <component name="RunManager" selected="Spring Boot.ApiPassengerApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yz.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -273,8 +277,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
+        <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +324,7 @@
       <workItem from="1669708286165" duration="1232000" />
       <workItem from="1669709550064" duration="745000" />
       <workItem from="1669710323876" duration="10901000" />
-      <workItem from="1669721413267" duration="1472000" />
+      <workItem from="1669721413267" duration="3431000" />
     </task>
     <servers />
   </component>
