@@ -46,15 +46,8 @@ public class ForecastPriceService {
         foreCastPriceDTO.setCityCode(cityCode);
         foreCastPriceDTO.setVehicleType(vehicleType);
         ResponseResult<ForecastPriceResponse> forecast = servicePriceClient.forecast(foreCastPriceDTO);
-        double price = forecast.getData().getPrice();
 
-
-        ForecastPriceResponse forecastPriceResponse = new ForecastPriceResponse();
-        forecastPriceResponse.setPrice(price);
-        forecastPriceResponse.setCityCode(cityCode);
-        forecastPriceResponse.setVehicleType(vehicleType);
-
-        return ResponseResult.success(forecastPriceResponse);
+        return ResponseResult.success(forecast.getData());
 
     }
 
