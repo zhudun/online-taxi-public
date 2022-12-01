@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/ForecastPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/ForecastPriceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/response/ForecastPriceResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/response/ForecastPriceResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/controller/PriceRuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/controller/PriceRuleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/ForecastPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/ForecastPriceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/PriceRuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/PriceRuleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/remote/ServicePriceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/ServiceOrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/ServiceOrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -96,7 +95,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServicePriceApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceOrderApplication">
     <configuration name="ForecastPriceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yz.serviceprice.service.ForecastPriceService" />
       <module name="service-price" />
@@ -322,7 +321,7 @@
       <workItem from="1669709550064" duration="745000" />
       <workItem from="1669710323876" duration="10901000" />
       <workItem from="1669721413267" duration="5729000" />
-      <workItem from="1669915922086" duration="1830000" />
+      <workItem from="1669915922086" duration="3814000" />
     </task>
     <servers />
   </component>
