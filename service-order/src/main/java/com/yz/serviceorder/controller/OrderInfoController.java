@@ -1,6 +1,7 @@
 package com.yz.serviceorder.controller;
 
 
+import com.yz.internalcommon.constant.HeaderParamConstants;
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.request.OrderRequest;
 import com.yz.serviceorder.service.OrderInfoService;
@@ -34,10 +35,8 @@ public class OrderInfoController {
      * @return
      */
     @PostMapping("/add")
-    public ResponseResult add(@RequestBody OrderRequest orderRequest , HttpServletRequest httpServletRequest){
-            // 测试通过，通过header获取deviceCode
-    //        String deviceCode = httpServletRequest.getHeader(HeaderParamConstants.DEVICE_CODE);
-    //        orderRequest.setDeviceCode(deviceCode);
+    public ResponseResult add(@RequestBody OrderRequest orderRequest ){
+
 
         log.info("service-order"+orderRequest.getAddress());
         return orderInfoService.add(orderRequest);
