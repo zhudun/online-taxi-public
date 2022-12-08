@@ -9,8 +9,10 @@ import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.request.OrderRequest;
 import com.yz.internalcommon.util.RedisPrefixUtils;
 import com.yz.serviceorder.mapper.OrderInfoMapper;
+import com.yz.serviceorder.remote.ServiceDriverUserClient;
 import com.yz.serviceorder.remote.ServicePriceClient;
 import jodd.bean.BeanUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -27,7 +29,10 @@ import java.util.concurrent.TimeUnit;
  * @version: 1.0
  */
 @Service
+@Slf4j
 public class OrderInfoService {
+    @Autowired
+    ServiceDriverUserClient serviceDriverUserClient;
 
     @Autowired
     OrderInfoMapper orderInfoMapper;
@@ -40,6 +45,13 @@ public class OrderInfoService {
 
 
     public ResponseResult add(OrderRequest orderRequest){
+        //测试城市是否有可用司机
+        ResponseResult<Boolean> availableDriver = serviceDriverUserClient.isAvailableDriver(orderRequest.getAddress());
+        log.info("测试城市是否有可用司机结果:"+availableDriver.getData());
+        if(!availableDriver.getData()){
+            return ResponseResult.fail(CommonStatusEnum.CITY_DRIVER_EMPTY.getCode(),CommonStatusEnum.CITY_DRIVER_EMPTY.getMessage());
+        }
+
         //需要判断计价规则的版本是否为最新
         ResponseResult<Boolean> aNew = servicePriceClient.isNew(orderRequest.getFareType(), orderRequest.getFareVersion());
         if(!aNew.getData()){
