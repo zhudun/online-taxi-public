@@ -1,10 +1,14 @@
 package com.yz.servicedriveruser.service;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.yz.internalcommon.constant.CommonStatusEnum;
 import com.yz.internalcommon.constant.DriverCarConstants;
+import com.yz.internalcommon.dto.DriverCarBindingRelationship;
 import com.yz.internalcommon.dto.DriverUser;
 import com.yz.internalcommon.dto.DriverUserWorkStatus;
 import com.yz.internalcommon.dto.ResponseResult;
+import com.yz.internalcommon.response.OrderDriverResponse;
+import com.yz.servicedriveruser.mapper.DriverCarBindingRelationshipMapper;
 import com.yz.servicedriveruser.mapper.DriverUserMapper;
 import com.yz.servicedriveruser.mapper.DriverUserWorkStatusMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -74,5 +78,38 @@ public class DriverUserService {
         return ResponseResult.success(driverUser);
     }
 
+    @Autowired
+    DriverCarBindingRelationshipMapper driverCarBindingRelationshipMapper;
 
-}
+    public ResponseResult<OrderDriverResponse> getAvailableDriver(Long carId) {
+        // 车辆和司机绑定关系查询
+        QueryWrapper<DriverCarBindingRelationship> driverCarBindingRelationshipQueryWrapper = new QueryWrapper<>();
+        driverCarBindingRelationshipQueryWrapper.eq("car_id", carId);
+        driverCarBindingRelationshipQueryWrapper.eq("bind_state", DriverCarConstants.DRIVER_CAR_BIND);
+
+        DriverCarBindingRelationship driverCarBindingRelationship = driverCarBindingRelationshipMapper.selectOne(driverCarBindingRelationshipQueryWrapper);
+        Long driverId = driverCarBindingRelationship.getDriverId();
+        // 司机工作状态的查询
+        QueryWrapper<DriverUserWorkStatus> driverUserWorkStatusQueryWrapper = new QueryWrapper<>();
+        driverUserWorkStatusQueryWrapper.eq("driver_id",driverId);
+        driverUserWorkStatusQueryWrapper.eq("work_status",DriverCarConstants.DRIVER_WORK_STATUS_START);
+        DriverUserWorkStatus driverUserWorkStatus = driverUserWorkStatusMapper.selectOne(driverUserWorkStatusQueryWrapper);
+        if (null == driverUserWorkStatus){
+            return ResponseResult.fail(CommonStatusEnum.AVAILABLE_DRIVER_EMPTY.getCode(),CommonStatusEnum.AVAILABLE_DRIVER_EMPTY.getMessage());
+        }else{
+            // 查询司机信息
+            QueryWrapper<DriverUser> driverUserQueryWrapper = new QueryWrapper<>();
+            driverUserQueryWrapper.eq("id",driverId);
+            DriverUser driverUser = driverUserMapper.selectOne(driverUserQueryWrapper);
+
+            OrderDriverResponse orderDriverResponse = new OrderDriverResponse();
+            orderDriverResponse.setCarId(carId);
+            orderDriverResponse.setDriverId(driverId);
+            orderDriverResponse.setDriverPhone(driverUser.getDriverPhone());
+
+            return ResponseResult.success(orderDriverResponse);
+        }
+    }
+
+
+    }

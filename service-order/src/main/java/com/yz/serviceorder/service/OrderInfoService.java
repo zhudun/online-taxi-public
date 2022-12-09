@@ -13,7 +13,6 @@ import com.yz.serviceorder.mapper.OrderInfoMapper;
 import com.yz.serviceorder.remote.ServiceDriverUserClient;
 import com.yz.serviceorder.remote.ServiceMapClient;
 import com.yz.serviceorder.remote.ServicePriceClient;
-import jodd.bean.BeanUtil;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
@@ -21,7 +20,6 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
-import sun.misc.Request;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -122,6 +120,15 @@ public class OrderInfoService {
             //获得终端
 
             //解析终端
+            JSONArray result = JSONArray.fromObject(listResponseResult.getData());
+            for (int j = 0; j < result.size(); j++) {
+                JSONObject jsonObject = result.getJSONObject(j);
+                String carIdString = jsonObject.getString("carId");
+                long carId = Long.parseLong(carIdString);
+
+
+
+            }
 
             //根据解析出来的终端，查询车辆信息
 
