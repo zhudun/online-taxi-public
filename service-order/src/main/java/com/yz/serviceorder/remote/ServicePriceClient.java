@@ -2,6 +2,7 @@ package com.yz.serviceorder.remote;
 
 import com.yz.internalcommon.dto.PriceRule;
 import com.yz.internalcommon.dto.ResponseResult;
+import com.yz.internalcommon.request.PriceRuleIsNewRequest;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,8 +15,8 @@ import org.springframework.web.bind.annotation.*;
 @FeignClient("service-price")
 public interface ServicePriceClient {
 
-    @RequestMapping(method = RequestMethod.POST,value ="/price-rule/is-new")
-    public ResponseResult<Boolean> isNew(@RequestParam String fareType, @RequestParam Integer fareVersion);
+    @PostMapping("/price-rule/is-new")
+    public ResponseResult<Boolean> isNew(@RequestBody PriceRuleIsNewRequest priceRuleIsNewRequest);
 
     @RequestMapping(method = RequestMethod.POST,value = "/price-rule/if-exists")
     public ResponseResult<Boolean> ifPriceExists(@RequestBody PriceRule priceRule);

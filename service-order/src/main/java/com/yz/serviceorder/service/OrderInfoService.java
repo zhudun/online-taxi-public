@@ -7,6 +7,8 @@ import com.yz.internalcommon.dto.OrderInfo;
 import com.yz.internalcommon.dto.PriceRule;
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.request.OrderRequest;
+import com.yz.internalcommon.request.PriceRuleIsNewRequest;
+import com.yz.internalcommon.response.OrderDriverResponse;
 import com.yz.internalcommon.response.TerminalResponse;
 import com.yz.internalcommon.util.RedisPrefixUtils;
 import com.yz.serviceorder.mapper.OrderInfoMapper;
@@ -51,6 +53,7 @@ public class OrderInfoService {
     ServiceMapClient serviceMapClient;
 
 
+
     public ResponseResult add(OrderRequest orderRequest){
         //测试城市是否有可用司机
         ResponseResult<Boolean> availableDriver = serviceDriverUserClient.isAvailableDriver(orderRequest.getAddress());
@@ -60,7 +63,10 @@ public class OrderInfoService {
         }
 
         //需要判断计价规则的版本是否为最新
-        ResponseResult<Boolean> aNew = servicePriceClient.isNew(orderRequest.getFareType(), orderRequest.getFareVersion());
+        PriceRuleIsNewRequest priceRuleIsNewRequest = new PriceRuleIsNewRequest();
+        priceRuleIsNewRequest.setFareType(orderRequest.getFareType());
+        priceRuleIsNewRequest.setFareVersion(orderRequest.getFareVersion());
+        ResponseResult<Boolean> aNew = servicePriceClient.isNew(priceRuleIsNewRequest);
         if(!aNew.getData()){
             return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_CHANGED.getCode(),CommonStatusEnum.PRICE_RULE_CHANGED.getMessage());
         }
@@ -113,6 +119,7 @@ public class OrderInfoService {
         radiusList.add(5000);
         //搜索结果
         ResponseResult<List<TerminalResponse>> listResponseResult =null;
+        radius:
         for (int i = 0; i < radiusList.size(); i++) {
             Integer radius = radiusList.get(i);
             listResponseResult = serviceMapClient.terminalAroundsearch(center,radius);
@@ -126,6 +133,15 @@ public class OrderInfoService {
                 String carIdString = jsonObject.getString("carId");
                 long carId = Long.parseLong(carIdString);
 
+                //查询是否有可派单的司机
+                ResponseResult<OrderDriverResponse> availableDriver = serviceDriverUserClient.getAvailableDriver(carId);
+                if (availableDriver.getCode() == CommonStatusEnum.AVAILABLE_DRIVER_EMPTY.getCode()) {
+                    log.info("没有车辆ID:" + carId+"对应的司机");
+                    continue radius;
+                } else {
+                    log.info("车辆ID:" + carId+"找到了正在出车的司机");
+                    break radius;
+                }
 
 
             }

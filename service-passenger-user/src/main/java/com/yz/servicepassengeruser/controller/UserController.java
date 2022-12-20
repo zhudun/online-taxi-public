@@ -28,7 +28,7 @@ public class UserController {
     @GetMapping("/user/{passengerPhone}")
     public ResponseResult getUser(@PathVariable("passengerPhone") String passengerPhone) {
 
-        System.out.println("service-passenger-user:phone:" + passengerPhone);
+        System.out.println("调用了getUser方法，其手机phone为:" + passengerPhone);
         return userService.getUserByPhone(passengerPhone);
     }
 

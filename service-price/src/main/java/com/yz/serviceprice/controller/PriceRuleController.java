@@ -2,6 +2,7 @@ package com.yz.serviceprice.controller;
 
 import com.yz.internalcommon.dto.PriceRule;
 import com.yz.internalcommon.dto.ResponseResult;
+import com.yz.internalcommon.request.PriceRuleIsNewRequest;
 import com.yz.serviceprice.service.PriceRuleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -41,8 +42,9 @@ public class PriceRuleController {
     }
 
     @PostMapping("/is-new")
-    public ResponseResult<Boolean> isNew(@RequestParam String fareType,@RequestParam Integer fareVersion){
-        return priceRuleService.isNew(fareType,fareVersion);
+    public ResponseResult<Boolean> isNew(@RequestBody PriceRuleIsNewRequest priceRuleIsNewRequest){
+
+        return priceRuleService.isNew(priceRuleIsNewRequest.getFareType(),priceRuleIsNewRequest.getFareVersion());
     }
 
     /**
