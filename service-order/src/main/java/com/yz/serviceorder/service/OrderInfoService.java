@@ -76,8 +76,8 @@ public class OrderInfoService {
         if (isBlackDevice(orderRequest))
             return ResponseResult.fail(CommonStatusEnum.DEVICE_IS_BLACK.getCode(), CommonStatusEnum.DEVICE_IS_BLACK.getMessage());
 
-        //判断有正在进行的订单不允许下单
-        if(isOrderGoingOn(orderRequest.getPassengerId())>0){
+        //判断乘客是否有正在进行的订单，有的话不允许下单
+        if(isPassengerOrderGoingon(orderRequest.getPassengerId())>0){
             return ResponseResult.fail(CommonStatusEnum.ORDER_GOING_ON.getCode(),CommonStatusEnum.ORDER_GOING_ON.getMessage());
         }
 
@@ -137,9 +137,16 @@ public class OrderInfoService {
                 ResponseResult<OrderDriverResponse> availableDriver = serviceDriverUserClient.getAvailableDriver(carId);
                 if (availableDriver.getCode() == CommonStatusEnum.AVAILABLE_DRIVER_EMPTY.getCode()) {
                     log.info("没有车辆ID:" + carId+"对应的司机");
-                    continue radius;
+                    continue;
                 } else {
                     log.info("车辆ID:" + carId+"找到了正在出车的司机");
+                    OrderDriverResponse orderDriverResponse = availableDriver.getData();
+                    Long driverId = orderDriverResponse.getDriverId();
+                    //判断司机是否有正在进行的订单
+                    if(isDriverOrderGoingon(driverId)>0){
+                        continue;
+                    }
+                    //退出 不再进行司机的查找
                     break radius;
                 }
 
@@ -193,11 +200,12 @@ public class OrderInfoService {
     }
 
     /**
-     * 是否有业务中的订单
+     * 判断是否有 业务中的订单
      * @param passengerId
      * @return
      */
-    private int isOrderGoingOn(Long passengerId){
+    private int isPassengerOrderGoingon(Long passengerId){
+        // 判断有正在进行的订单不允许下单
         QueryWrapper<OrderInfo> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("passenger_id",passengerId);
         queryWrapper.and(wrapper->wrapper.eq("order_status",OrderConstants.ORDER_START)
@@ -208,7 +216,29 @@ public class OrderInfoService {
                 .or().eq("order_status",OrderConstants.PASSENGER_GETOFF)
                 .or().eq("order_status",OrderConstants.TO_START_PAY)
         );
+
+
         Integer validOrderNumber = orderInfoMapper.selectCount(queryWrapper);
+
+        return validOrderNumber;
+
+    }
+
+    /**
+     * 是否有业务中的订单
+     * @param driverId
+     * @return
+     */
+        private int isDriverOrderGoingon(Long driverId){
+        QueryWrapper<OrderInfo> queryWrapper = new QueryWrapper<>();
+            queryWrapper.eq("driver_id",driverId);
+        queryWrapper.and(wrapper->wrapper.eq("order_status",OrderConstants.DRIVER_RECEIVE_ORDER)
+                .or().eq("order_status",OrderConstants.DRIVER_TO_PICK_UP_PASSENGER)
+                .or().eq("order_status",OrderConstants.DRIVER_ARRIVED_DEPARTURE)
+                .or().eq("order_status",OrderConstants.PICK_UP_PASSENGER)
+        );
+        Integer validOrderNumber = orderInfoMapper.selectCount(queryWrapper);
+        log.info("司机ID："+driverId+"，正在进行的订单的数量是："+validOrderNumber);
         return validOrderNumber;
     }
 
