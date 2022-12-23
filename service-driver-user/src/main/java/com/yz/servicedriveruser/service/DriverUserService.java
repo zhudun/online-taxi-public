@@ -3,11 +3,9 @@ package com.yz.servicedriveruser.service;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.yz.internalcommon.constant.CommonStatusEnum;
 import com.yz.internalcommon.constant.DriverCarConstants;
-import com.yz.internalcommon.dto.DriverCarBindingRelationship;
-import com.yz.internalcommon.dto.DriverUser;
-import com.yz.internalcommon.dto.DriverUserWorkStatus;
-import com.yz.internalcommon.dto.ResponseResult;
+import com.yz.internalcommon.dto.*;
 import com.yz.internalcommon.response.OrderDriverResponse;
+import com.yz.servicedriveruser.mapper.CarMapper;
 import com.yz.servicedriveruser.mapper.DriverCarBindingRelationshipMapper;
 import com.yz.servicedriveruser.mapper.DriverUserMapper;
 import com.yz.servicedriveruser.mapper.DriverUserWorkStatusMapper;
@@ -34,6 +32,9 @@ public class DriverUserService {
 
     @Autowired
     DriverUserWorkStatusMapper driverUserWorkStatusMapper;
+
+    @Autowired
+    CarMapper carMapper;
 
 
     public ResponseResult testGetDriverUser(){
@@ -101,11 +102,21 @@ public class DriverUserService {
             QueryWrapper<DriverUser> driverUserQueryWrapper = new QueryWrapper<>();
             driverUserQueryWrapper.eq("id",driverId);
             DriverUser driverUser = driverUserMapper.selectOne(driverUserQueryWrapper);
+            // 查询车辆信息
+            QueryWrapper<Car> carQueryWrapper = new QueryWrapper<>();
+            carQueryWrapper.eq("id",carId);
+            Car car = carMapper.selectOne(carQueryWrapper);
+
 
             OrderDriverResponse orderDriverResponse = new OrderDriverResponse();
             orderDriverResponse.setCarId(carId);
             orderDriverResponse.setDriverId(driverId);
             orderDriverResponse.setDriverPhone(driverUser.getDriverPhone());
+
+
+            orderDriverResponse.setLicenseId(driverUser.getLicenseId());
+            orderDriverResponse.setVehicleNo(car.getVehicleNo());
+            orderDriverResponse.setVehicleType(car.getVehicleType());
 
             return ResponseResult.success(orderDriverResponse);
         }
