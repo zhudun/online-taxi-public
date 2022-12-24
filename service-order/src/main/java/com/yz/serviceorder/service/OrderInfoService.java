@@ -145,7 +145,6 @@ public class OrderInfoService {
                     log.info("车辆ID:" + carId+"找到了正在出车的司机");
                     OrderDriverResponse orderDriverResponse = availableDriver.getData();
                     Long driverId = orderDriverResponse.getDriverId();
-                    System.out.println(driverId.toString()+"driverId的string地址");
                     String driverPhone = orderDriverResponse.getDriverPhone();
                     String licenseId = orderDriverResponse.getLicenseId();
                     String vehicleNo = orderDriverResponse.getVehicleNo();
