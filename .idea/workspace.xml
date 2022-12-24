@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,17 +142,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -329,7 +319,8 @@
       <workItem from="1671092924726" duration="10925000" />
       <workItem from="1671542077258" duration="9375000" />
       <workItem from="1671689441631" duration="4887000" />
-      <workItem from="1671795782901" duration="10939000" />
+      <workItem from="1671795782901" duration="12873000" />
+      <workItem from="1671857619369" duration="6479000" />
     </task>
     <servers />
   </component>
