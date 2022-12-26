@@ -10,9 +10,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version: 1.0
  */
 @SpringBootApplication
-public class SseDriverClientWeb {
+public class ServiceSsePushApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SseDriverClientWeb.class,args);
+        SpringApplication.run(ServiceSsePushApplication.class,args);
     }
 }
