@@ -7,8 +7,6 @@
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/sse-driver-client-web/src/main/java/com/yz/ssedriverclientweb/controller/SseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sse-driver-client-web/src/main/java/com/yz/ssedriverclientweb/controller/SseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sse-driver-client-web/src/main/resources/static/driver-client.html" beforeDir="false" afterPath="$PROJECT_DIR$/sse-driver-client-web/src/main/resources/static/driver-client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sse-driver-client-web/target/classes/com/yz/ssedriverclientweb/controller/SseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sse-driver-client-web/target/classes/com/yz/ssedriverclientweb/controller/SseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sse-driver-client-web/target/classes/static/driver-client.html" beforeDir="false" afterPath="$PROJECT_DIR$/sse-driver-client-web/target/classes/static/driver-client.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -347,7 +345,7 @@
       <workItem from="1671542077258" duration="9375000" />
       <workItem from="1671689441631" duration="4887000" />
       <workItem from="1671795782901" duration="12873000" />
-      <workItem from="1671857619369" duration="24409000" />
+      <workItem from="1671857619369" duration="26850000" />
     </task>
     <servers />
   </component>
