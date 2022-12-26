@@ -249,11 +249,11 @@
       <module name="service-sse-push" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yz.ssedriverclientweb.*" />
+          <option name="PATTERN" value="com.yz.servicessepush.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yz.ssedriverclientweb.SseDriverClientWeb" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yz.servicessepush.SseDriverClientWeb" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -342,7 +342,7 @@
       <workItem from="1671542077258" duration="9375000" />
       <workItem from="1671689441631" duration="4887000" />
       <workItem from="1671795782901" duration="12873000" />
-      <workItem from="1671857619369" duration="27975000" />
+      <workItem from="1671857619369" duration="28394000" />
     </task>
     <servers />
   </component>
