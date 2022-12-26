@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/sse-driver-client-web/src/main/java/com/yz/ssedriverclientweb/controller/SseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sse-driver-client-web/src/main/java/com/yz/ssedriverclientweb/controller/SseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sse-driver-client-web/src/main/resources/static/driver-client.html" beforeDir="false" afterPath="$PROJECT_DIR$/sse-driver-client-web/src/main/resources/static/driver-client.html" afterDir="false" />
-    </list>
+    <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -249,7 +246,7 @@
       </method>
     </configuration>
     <configuration name="SseDriverClientWeb" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="sse-driver-client-web" />
+      <module name="service-sse-push" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yz.ssedriverclientweb.*" />
@@ -345,7 +342,7 @@
       <workItem from="1671542077258" duration="9375000" />
       <workItem from="1671689441631" duration="4887000" />
       <workItem from="1671795782901" duration="12873000" />
-      <workItem from="1671857619369" duration="26850000" />
+      <workItem from="1671857619369" duration="27975000" />
     </task>
     <servers />
   </component>
