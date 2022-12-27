@@ -75,5 +75,14 @@ public class OrderRequest {
      */
     private String toPickUpPassengerAddress;
 
+    /**
+     * 接到乘客，乘客上车经度
+     */
+    private String pickUpPassengerLongitude;
+
+    /**
+     * 接到乘客，乘客上车纬度
+     */
+    private String pickUpPassengerLatitude;
 
 }
