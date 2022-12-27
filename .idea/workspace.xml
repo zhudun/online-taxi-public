@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/remote/ServiceSsePushClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-sse-push/src/main/resources/static/passenger-test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/remote/ServiceDriverUserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/remote/ServiceDriverUserClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-sse-push/src/main/java/com/yz/servicessepush/ServiceSsePushApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/src/main/java/com/yz/servicessepush/ServiceSsePushApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-sse-push/src/main/java/com/yz/servicessepush/controller/SseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/src/main/java/com/yz/servicessepush/controller/SseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-sse-push/src/main/resources/static/service-sse-push-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/src/main/resources/static/driver-test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-sse-push/target/classes/com/yz/servicessepush/ServiceSsePushApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/target/classes/com/yz/servicessepush/ServiceSsePushApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-sse-push/target/classes/com/yz/servicessepush/controller/SseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/target/classes/com/yz/servicessepush/controller/SseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-sse-push/target/classes/static/driver-client.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-sse-push/target/classes/static/service-sse-push-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/target/classes/static/service-sse-push-test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
