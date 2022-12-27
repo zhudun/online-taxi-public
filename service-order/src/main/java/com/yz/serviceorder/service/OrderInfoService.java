@@ -58,7 +58,11 @@ public class OrderInfoService {
     ServiceMapClient serviceMapClient;
 
 
-
+    /**
+     * 新建订单
+     * @param orderRequest
+     * @return
+     */
     public ResponseResult add(OrderRequest orderRequest){
         //测试城市是否有可用司机
         ResponseResult<Boolean> availableDriver = serviceDriverUserClient.isAvailableDriver(orderRequest.getAddress());
@@ -258,6 +262,11 @@ public class OrderInfoService {
 
     }
 
+    /**
+     * 计价规则是否存在
+     * @param orderRequest
+     * @return
+     */
     private boolean isPriceRuleExists(OrderRequest orderRequest){
         String fareType =orderRequest.getFareType();
         int index=fareType.indexOf("$");
@@ -272,7 +281,11 @@ public class OrderInfoService {
         return booleanResponseResult.getData();
     }
 
-
+    /**
+     * 是否是黑名单
+     * @param orderRequest
+     * @return
+     */
     private boolean isBlackDevice(OrderRequest orderRequest) {
         //需要判断下单的设备是否是黑名单设备
         String deviceCode  = orderRequest.getDeviceCode();
@@ -294,7 +307,7 @@ public class OrderInfoService {
     }
 
     /**
-     * 判断是否有 业务中的订单
+     * 判断乘客是否有业务中的订单
      * @param passengerId
      * @return
      */
@@ -319,11 +332,11 @@ public class OrderInfoService {
     }
 
     /**
-     * 是否有业务中的订单
+     * 判断司机是否有业务中的订单
      * @param driverId
      * @return
      */
-        private int isDriverOrderGoingon(Long driverId){
+     private int isDriverOrderGoingon(Long driverId){
         QueryWrapper<OrderInfo> queryWrapper = new QueryWrapper<>();
             queryWrapper.eq("driver_id",driverId);
         queryWrapper.and(wrapper->wrapper.eq("order_status",OrderConstants.DRIVER_RECEIVE_ORDER)
@@ -335,6 +348,31 @@ public class OrderInfoService {
         log.info("司机ID："+driverId+"，正在进行的订单的数量是："+validOrderNumber);
         return validOrderNumber;
     }
+    /**
+     * 去接乘客
+     * @param orderRequest
+     * @return
+     */
+    public ResponseResult toPickUpPassenger(OrderRequest orderRequest){
+        Long orderId = orderRequest.getOrderId();
+        LocalDateTime toPickUpPassengerTime = orderRequest.getToPickUpPassengerTime();
+        String toPickUpPassengerLongitude = orderRequest.getToPickUpPassengerLongitude();
+        String toPickUpPassengerLatitude = orderRequest.getToPickUpPassengerLatitude();
+        String toPickUpPassengerAddress = orderRequest.getToPickUpPassengerAddress();
+        QueryWrapper<OrderInfo> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("id",orderId);
+        OrderInfo orderInfo = orderInfoMapper.selectOne(queryWrapper);
 
+        orderInfo.setToPickUpPassengerAddress(toPickUpPassengerAddress);
+        orderInfo.setToPickUpPassengerLatitude(toPickUpPassengerLatitude);
+        orderInfo.setToPickUpPassengerLongitude(toPickUpPassengerLongitude);
+        orderInfo.setToPickUpPassengerTime(LocalDateTime.now());
+        orderInfo.setOrderStatus(OrderConstants.DRIVER_TO_PICK_UP_PASSENGER);
+
+        orderInfoMapper.updateById(orderInfo);
+
+        return ResponseResult.success();
+
+    }
 
 }
