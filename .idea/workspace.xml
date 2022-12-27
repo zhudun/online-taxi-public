@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/util/SsePrefixUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-sse-push/测试文件.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-sse-push/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-sse-push/src/main/java/com/yz/servicessepush/SseDriverClientWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/src/main/java/com/yz/servicessepush/ServiceSsePushApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/remote/ServiceSsePushClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-sse-push/src/main/resources/static/passenger-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/remote/ServiceDriverUserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/remote/ServiceDriverUserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-sse-push/src/main/java/com/yz/servicessepush/ServiceSsePushApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/src/main/java/com/yz/servicessepush/ServiceSsePushApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-sse-push/src/main/java/com/yz/servicessepush/controller/SseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/src/main/java/com/yz/servicessepush/controller/SseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-sse-push/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-sse-push/src/main/resources/static/driver-client.html" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/src/main/resources/static/service-sse-push-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-sse-push/src/main/resources/static/service-sse-push-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/src/main/resources/static/driver-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-sse-push/target/classes/com/yz/servicessepush/ServiceSsePushApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/target/classes/com/yz/servicessepush/ServiceSsePushApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-sse-push/target/classes/com/yz/servicessepush/controller/SseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/target/classes/com/yz/servicessepush/controller/SseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-sse-push/target/classes/static/driver-client.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-sse-push/target/classes/static/service-sse-push-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/target/classes/static/service-sse-push-test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -69,9 +72,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service-sse-push/src/main/resources/static" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.30114943" />
@@ -82,6 +86,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\simpleProject\online-taxi-public\service-sse-push\src\main\resources\static" />
       <recent name="E:\simpleProject\online-taxi-public\service-driver-user\src\main\java\com\yz\servicedriveruser\mapper" />
       <recent name="E:\simpleProject\online-taxi-public\api-driver\src\main\java\com\yz\apidriver" />
     </key>
@@ -245,7 +250,7 @@
       </method>
     </configuration>
     <configuration name="ServiceSsePushApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="sse-driver-client-web" />
+      <module name="service-sse-push" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yz.servicessepush.*" />
@@ -292,8 +297,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ApiPassengerApplication" />
         <item itemvalue="Spring Boot.ServiceSsePushApplication" />
+        <item itemvalue="Spring Boot.ApiPassengerApplication" />
         <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
       </list>
     </recent_temporary>

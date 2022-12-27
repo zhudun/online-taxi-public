@@ -2,6 +2,7 @@ package com.yz.serviceorder.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.yz.internalcommon.constant.CommonStatusEnum;
+import com.yz.internalcommon.constant.IdentityConstants;
 import com.yz.internalcommon.constant.OrderConstants;
 import com.yz.internalcommon.dto.Car;
 import com.yz.internalcommon.dto.OrderInfo;
@@ -16,6 +17,7 @@ import com.yz.serviceorder.mapper.OrderInfoMapper;
 import com.yz.serviceorder.remote.ServiceDriverUserClient;
 import com.yz.serviceorder.remote.ServiceMapClient;
 import com.yz.serviceorder.remote.ServicePriceClient;
+import com.yz.serviceorder.remote.ServiceSsePushClient;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
@@ -107,6 +109,9 @@ public class OrderInfoService {
     @Autowired
     RedissonClient redissonClient;
 
+    @Autowired
+    ServiceSsePushClient serviceSsePushClient;
+
     /**
      * 实时订单派单逻辑
      * @param orderInfo
@@ -181,6 +186,37 @@ public class OrderInfoService {
                     orderInfo.setOrderStatus(OrderConstants.DRIVER_RECEIVE_ORDER);
 
                     orderInfoMapper.updateById(orderInfo);
+                    // 通知司机
+                    JSONObject driverContent = new  JSONObject();
+                    driverContent.put("passengerId",orderInfo.getPassengerId());
+                    driverContent.put("passengerPhone",orderInfo.getPassengerPhone());
+                    driverContent.put("departure",orderInfo.getDeparture());
+                    driverContent.put("depLongitude",orderInfo.getDepLongitude());
+                    driverContent.put("depLatitude",orderInfo.getDepLatitude());
+
+                    driverContent.put("destination",orderInfo.getDestination());
+                    driverContent.put("destLongitude",orderInfo.getDestLongitude());
+                    driverContent.put("destLatitude",orderInfo.getDestLatitude());
+
+                    serviceSsePushClient.push(driverId, IdentityConstants.DRIVER_IDENTITY,driverContent.toString());
+
+                    // 通知乘客
+                    JSONObject passengerContent = new  JSONObject();
+                    passengerContent.put("driverId",orderInfo.getDriverId());
+                    passengerContent.put("driverPhone",orderInfo.getDriverPhone());
+                    passengerContent.put("vehicleNo",orderInfo.getVehicleNo());
+                    // 车辆信息，调用车辆服务
+                    ResponseResult<Car> carById = serviceDriverUserClient.getCarById(carId);
+                    Car carRemote = carById.getData();
+
+                    passengerContent.put("brand", carRemote.getBrand());
+                    passengerContent.put("model",carRemote.getModel());
+                    passengerContent.put("vehicleColor",carRemote.getVehicleColor());
+
+                    passengerContent.put("receiveOrderCarLongitude",orderInfo.getReceiveOrderCarLongitude());
+                    passengerContent.put("receiveOrderCarLatitude",orderInfo.getReceiveOrderCarLatitude());
+
+                    serviceSsePushClient.push(orderInfo.getPassengerId(), IdentityConstants.PASSENGER_IDENTITY,passengerContent.toString());
 
                     lock.unlock();
                     break radius;

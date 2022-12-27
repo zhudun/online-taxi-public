@@ -51,6 +51,7 @@ public class SseController {
      */
     @GetMapping("/push")
     public String push(@RequestParam Long userId, @RequestParam String identity, @RequestParam String content){
+        log.info("用户ID："+userId+",身份："+identity);
         String sseMapKey = SsePrefixUtils.generatorSseKey(userId,identity);
         try {
             if (sseEmitterMap.containsKey(sseMapKey)){
