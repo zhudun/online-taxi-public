@@ -37,6 +37,15 @@ public class ApiDriverOrderInfoService {
         return  serviceOrderClient.pickUpPassenger(orderRequest);
     }
 
+    /**
+     * 行程结束乘客到达目的地
+     * @param orderRequest
+     * @return
+     */
+    public ResponseResult passengerGetoff(OrderRequest orderRequest){
+        return serviceOrderClient.passengerGetoff(orderRequest);
+    }
+
 
 }
 

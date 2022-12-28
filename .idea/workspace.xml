@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist" />
+    <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/remote/ServiceOrderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/remote/ServiceOrderClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/ApiDriverOrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/ApiDriverOrderInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/remote/ServiceMapClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/remote/ServiceMapClient.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

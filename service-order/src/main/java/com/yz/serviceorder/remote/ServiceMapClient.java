@@ -20,9 +20,11 @@ import java.util.List;
 @FeignClient("service-map")
 public interface ServiceMapClient {
 
+    //搜索周边车辆
     @RequestMapping(method = RequestMethod.POST,value = "/terminal/aroundsearch")
     public ResponseResult<List<TerminalResponse>> terminalAroundsearch(@RequestParam String center , @RequestParam Integer radius);
 
+    //查询终端在某个时间段的轨迹结果
     @RequestMapping(method = RequestMethod.POST, value = "/terminal/trsearch")
     public ResponseResult<TrsearchResponse> trsearch(@RequestParam String tid, @RequestParam Long starttime, @RequestParam Long endtime);
 
