@@ -2,6 +2,7 @@ package com.yz.servicemap.service;
 
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.response.TerminalResponse;
+import com.yz.internalcommon.response.TrsearchResponse;
 import com.yz.servicemap.remote.TerminalClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,7 +31,7 @@ public class TerminalService {
         return terminalClient.aroundsearch(center,radius);
     }
 
-    public ResponseResult trsearch(String tid ,Long starttime , Long endtime){
+    public ResponseResult<TrsearchResponse>  trsearch(String tid , Long starttime , Long endtime){
 
         return terminalClient.trsearch(tid,starttime,endtime);
     }
