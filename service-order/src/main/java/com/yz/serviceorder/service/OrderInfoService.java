@@ -216,6 +216,7 @@ public class OrderInfoService {
                     orderInfo.setReceiveOrderTime(LocalDateTime.now());
                     orderInfo.setLicenseId(licenseId);
                     orderInfo.setVehicleNo(vehicleNo);
+                    orderInfo.setVehicleType(vehicleType);
                     orderInfo.setOrderStatus(OrderConstants.DRIVER_RECEIVE_ORDER);
 
                     orderInfoMapper.updateById(orderInfo);
@@ -446,13 +447,26 @@ public class OrderInfoService {
         // 订单行驶的路程和时间,调用 service-map
         ResponseResult<Car> carById = serviceDriverUserClient.getCarById(orderInfo.getCarId());
         Long starttime = orderInfo.getPickUpPassengerTime().toInstant(ZoneOffset.of("+8")).toEpochMilli();
-        Long endtime = LocalDateTime.now().toInstant(ZoneOffset.of("+8")).toEpochMilli();
+       //此为测试数据
+        Long endtime = orderInfo.getPickUpPassengerTime().toInstant(ZoneOffset.of("+8")).toEpochMilli()+7200000*8;
+//       这是真实写法
+//        Long endtime = LocalDateTime.now().toInstant(ZoneOffset.of("+8")).toEpochMilli();
         System.out.println("开始时间："+starttime);
         System.out.println("结束时间："+endtime);
         ResponseResult<TrsearchResponse> trsearch = serviceMapClient.trsearch(carById.getData().getTid(), starttime,endtime);
         TrsearchResponse data = trsearch.getData();
-        orderInfo.setDriveMile(data.getDriveMile());
-        orderInfo.setDriveTime(data.getDriveTime());
+        Long driveMile = data.getDriveMile();
+        Long driveTime = data.getDriveTime();
+
+        orderInfo.setDriveMile(driveMile);
+        orderInfo.setDriveTime(driveTime);
+
+        // 获取价格
+        String address = orderInfo.getAddress();//地址就是城市编码
+        String vehicleType = orderInfo.getVehicleType();
+        ResponseResult<Double> doubleResponseResult = servicePriceClient.calculatePrice(driveMile.intValue(), driveTime.intValue(), address, vehicleType);
+        Double price = doubleResponseResult.getData();
+        orderInfo.setPrice(price);
 
         orderInfoMapper.updateById(orderInfo);
         return ResponseResult.success();

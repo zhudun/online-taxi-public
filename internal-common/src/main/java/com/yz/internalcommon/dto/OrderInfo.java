@@ -222,6 +222,11 @@ public class OrderInfo implements Serializable {
     private Integer orderStatus;
 
     /**
+     * 价格
+     */
+    private Double price;
+
+    /**
      * 创建时间
      */
 //    @TableField(fill = FieldFill.INSERT)

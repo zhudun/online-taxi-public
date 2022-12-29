@@ -23,7 +23,7 @@ public class ForecastPriceController {
 
     /**
      * 计算预估价格
-     * @param forecastPriceDTO
+     * @param foreCastPriceDTO
      * @return
      */
     @PostMapping("/forecast-price")
@@ -48,7 +48,7 @@ public class ForecastPriceController {
      * @return
      */
     @PostMapping("/calculate-price")
-    public ResponseResult calculatePrice(@RequestParam Integer distance , @RequestParam Integer duration, @RequestParam String cityCode, @RequestParam String vehicleType){
+    public ResponseResult<Double>  calculatePrice(@RequestParam Integer distance , @RequestParam Integer duration, @RequestParam String cityCode, @RequestParam String vehicleType){
         return forecastPriceService.calculatePrice(distance,duration,cityCode,vehicleType);
     }
 }
