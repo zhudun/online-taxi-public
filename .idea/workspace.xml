@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/PayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/remote/ServiceSsePushClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/PayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/PayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/PayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/PayService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -287,9 +289,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ServiceSsePushApplication" />
         <item itemvalue="应用程序.PriceService" />
         <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
-        <item itemvalue="Spring Boot.ServiceSsePushApplication" />
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
       </list>
     </recent_temporary>
