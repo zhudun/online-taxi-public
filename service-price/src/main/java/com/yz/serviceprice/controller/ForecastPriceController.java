@@ -1,15 +1,13 @@
 package com.yz.serviceprice.controller;
 
-import com.yz.serviceprice.service.ForecastPriceService;
+import com.yz.serviceprice.service.PriceService;
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.request.ForeCastPriceDTO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.annotation.Resource;
 
 /**
  * @Author: yangzhen
@@ -21,8 +19,13 @@ import javax.annotation.Resource;
 public class ForecastPriceController {
 
     @Autowired
-    private ForecastPriceService forecastPriceService;
+    private PriceService forecastPriceService;
 
+    /**
+     * 计算预估价格
+     * @param forecastPriceDTO
+     * @return
+     */
     @PostMapping("/forecast-price")
     public ResponseResult forecastPrice(@RequestBody ForeCastPriceDTO foreCastPriceDTO){
 
@@ -34,5 +37,18 @@ public class ForecastPriceController {
         String vehicleType = foreCastPriceDTO.getVehicleType();
 
         return forecastPriceService.forecastPrice(depLongitude,depLatitude,destLongitude,destLatitude,cityCode,vehicleType);
+    }
+
+    /**
+     * 计算实际价格
+     * @param distance
+     * @param duration
+     * @param cityCode
+     * @param vehicleType
+     * @return
+     */
+    @PostMapping("/calculate-price")
+    public ResponseResult calculatePrice(@RequestParam Integer distance , @RequestParam Integer duration, @RequestParam String cityCode, @RequestParam String vehicleType){
+        return forecastPriceService.calculatePrice(distance,duration,cityCode,vehicleType);
     }
 }

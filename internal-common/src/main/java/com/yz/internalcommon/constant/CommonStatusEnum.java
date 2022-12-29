@@ -28,7 +28,7 @@ public enum CommonStatusEnum {
     /**
      * 计价规则：1300-1399
      */
-    PRICE_RULE_EMPITY(1300,"计价规则不存在"),
+    PRICE_RULE_EMPTY(1300,"计价规则不存在"),
     PRICE_RULE_EXISTS(1301,"计价规则已存在，不允许添加"),
     PRICE_RULE_NOT_EDIT(1302,"计价规则没有变化"),
     PRICE_RULE_CHANGED(1303,"计价规则有变化"),

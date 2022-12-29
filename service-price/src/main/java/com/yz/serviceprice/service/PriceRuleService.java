@@ -94,15 +94,15 @@ public class PriceRuleService {
         if(priceRules.size()>0){
             return ResponseResult.success(priceRules.get(0));
         }else{
-            return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_EMPITY.getCode(),CommonStatusEnum.PRICE_RULE_EMPITY.getMessage());
+            return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_EMPTY.getCode(),CommonStatusEnum.PRICE_RULE_EMPTY.getMessage());
         }
 
     }
 
     public ResponseResult<Boolean> isNew(String fareType,int fareVersion){
         ResponseResult<PriceRule> newestVersionPriceRule = getNewestVersion(fareType);
-        if(newestVersionPriceRule.getCode() == CommonStatusEnum.PRICE_RULE_EMPITY.getCode()){
-//            return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_EMPITY.getCode(),CommonStatusEnum.PRICE_RULE_EMPITY.getMessage());
+        if(newestVersionPriceRule.getCode() == CommonStatusEnum.PRICE_RULE_EMPTY.getCode()){
+//            return ResponseResult.fail(CommonStatusEnum.PRICE_RULE_EMPTY.getCode(),CommonStatusEnum.PRICE_RULE_EMPTY.getMessage());
             return  ResponseResult.success(false);
         }
         PriceRule priceRule = newestVersionPriceRule.getData();
