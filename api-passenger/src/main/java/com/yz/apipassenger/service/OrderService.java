@@ -24,7 +24,7 @@ public class OrderService {
     }
 
     /**
-     * 取消订单
+     * 乘客取消订单
      * @param orderId
      * @return
      */
