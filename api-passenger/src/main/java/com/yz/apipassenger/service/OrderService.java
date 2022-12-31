@@ -1,6 +1,7 @@
 package com.yz.apipassenger.service;
 
 import com.yz.apipassenger.remote.ServiceOrderClient;
+import com.yz.internalcommon.constant.IdentityConstants;
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.request.OrderRequest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,5 +21,14 @@ public class OrderService {
 
     public ResponseResult add(OrderRequest orderRequest){
         return serviceOrderClient.add(orderRequest);
+    }
+
+    /**
+     * 取消订单
+     * @param orderId
+     * @return
+     */
+    public ResponseResult cancel(Long orderId){
+        return serviceOrderClient.cancel(orderId, IdentityConstants.PASSENGER_IDENTITY);
     }
 }
