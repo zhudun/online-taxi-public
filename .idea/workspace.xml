@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/service-pay/src/main/java/com/yz/servicepay/remote/ServiceOrderClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-pay/src/main/java/com/yz/servicepay/service/AlipayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/OrderConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/constant/OrderConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/controller/OrderInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/controller/OrderInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-pay/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-pay/src/main/java/com/yz/servicepay/ServicePayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/src/main/java/com/yz/servicepay/ServicePayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-pay/src/main/java/com/yz/servicepay/controller/AlipayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/src/main/java/com/yz/servicepay/controller/AlipayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-pay/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-pay/测试.txt" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/测试.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,7 +359,7 @@
       <workItem from="1671689441631" duration="4887000" />
       <workItem from="1671795782901" duration="12873000" />
       <workItem from="1671857619369" duration="28394000" />
-      <workItem from="1672413026959" duration="10943000" />
+      <workItem from="1672413026959" duration="15037000" />
     </task>
     <servers />
   </component>
