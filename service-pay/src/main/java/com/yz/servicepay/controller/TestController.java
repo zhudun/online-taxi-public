@@ -1,4 +1,4 @@
-package com.yz.testalipay.controller;
+package com.yz.servicepay.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

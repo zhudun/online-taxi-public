@@ -1,4 +1,4 @@
-package com.yz.testalipay.controller;
+package com.yz.servicepay.controller;
 
 import com.alipay.easysdk.factory.Factory;
 import com.alipay.easysdk.payment.page.models.AlipayTradePagePayResponse;

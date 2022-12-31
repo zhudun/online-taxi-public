@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/test-alipay/src/main/java/com/yz/testalipay/config/AlipayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-alipay/src/main/java/com/yz/testalipay/controller/AlipayController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-alipay/测试.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-alipay/src/main/java/com/yz/testalipay/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-alipay/src/main/java/com/yz/testalipay/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-alipay/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test-alipay/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-alipay/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-alipay/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-alipay/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-alipay/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-alipay/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-alipay/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-alipay/src/main/java/com/yz/testalipay/TestAlipayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/src/main/java/com/yz/servicepay/ServicePayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-alipay/src/main/java/com/yz/testalipay/config/AlipayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/src/main/java/com/yz/servicepay/config/AlipayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-alipay/src/main/java/com/yz/testalipay/controller/AlipayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/src/main/java/com/yz/servicepay/controller/AlipayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-alipay/src/main/java/com/yz/testalipay/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/src/main/java/com/yz/servicepay/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-alipay/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-alipay/src/test/java/com/yz/testalipay/TestAlipayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/src/test/java/com/yz/servicepay/ServicePayApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-alipay/测试.txt" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/测试.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,8 +276,8 @@
       </method>
     </configuration>
     <configuration name="TestAlipayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="test-alipay" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yz.testalipay.TestAlipayApplication" />
+      <module name="service-pay" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yz.servicepay.ServicePayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -360,7 +369,7 @@
       <workItem from="1671689441631" duration="4887000" />
       <workItem from="1671795782901" duration="12873000" />
       <workItem from="1671857619369" duration="28394000" />
-      <workItem from="1672413026959" duration="5535000" />
+      <workItem from="1672413026959" duration="8868000" />
     </task>
     <servers />
   </component>

@@ -7,3 +7,10 @@ alipay:
   publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzr80CSmNqg0UcpdV2CU+cyxcZxJDwRgO3rtfZtsbZ821kuejjk/GPGzoJzuHbJmp4i4EQqMumYn/MjG+2GWKq1mCOREHyQZ0Ct3omNQfPFO4+SWheM7OCYxNDIs5edKrglnUDXgmlThDJZp6jYsuk+P46r/WYS213kuz9yWtbUyoCXtb6ARIfc6tgmNPJjzyEzemy2aH8mZLbCsGiMLHLjX8dV6EpV9/mjwdfomtOq+mtKRzLdg8k9k4O6DJMW959a4OT7+5cYvvY1Txi8JlVz8erlqEvv5NuKFXXhzBurL/DGCw6TXvnJGtgrBw1EdDtg+oXzAO3PzLLxqQVB7lDwIDAQAB
   notifyUrl: https://24v6837o61.goho.co//alipay/notify
 
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: service-pay
