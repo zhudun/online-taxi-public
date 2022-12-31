@@ -14,6 +14,8 @@ public class TestController {
 
     @RequestMapping("/test")
     public String test(){
+
+        System.out.println("支付宝回调啦");
         return "test-alipay";
     }
 
