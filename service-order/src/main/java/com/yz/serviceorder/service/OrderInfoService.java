@@ -472,4 +472,14 @@ public class OrderInfoService {
         return ResponseResult.success();
     }
 
+    public ResponseResult pay(OrderRequest orderRequest){
+
+        Long orderId = orderRequest.getOrderId();
+        OrderInfo orderInfo = orderInfoMapper.selectById(orderId);
+
+        orderInfo.setOrderStatus(OrderConstants.SUCCESS_PAY);
+        orderInfoMapper.updateById(orderInfo);
+        return ResponseResult.success();
+    }
+
 }

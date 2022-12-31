@@ -2,6 +2,8 @@ package com.yz.servicepay.controller;
 
 import com.alipay.easysdk.factory.Factory;
 import com.alipay.easysdk.payment.page.models.AlipayTradePagePayResponse;
+import com.yz.servicepay.service.AlipayService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,6 +37,9 @@ public class AlipayController {
         return response.getBody();
     }
 
+    @Autowired
+    AlipayService alipayService;
+
     @PostMapping("/notify")
     public String notify(HttpServletRequest request) throws Exception {
         System.out.println("支付宝回调 notify");
@@ -51,10 +56,10 @@ public class AlipayController {
             if (Factory.Payment.Common().verifyNotify(param)){
                 System.out.println("通过支付宝的验证");
 
-                for (String name : param.keySet()) {
-                    System.out.println("收到并且接受好的参数，");
-                    System.out.println(name+","+param.get(name));
-                }
+                String out_trade_no = param.get("out_trade_no");
+                Long orderId = Long.parseLong(out_trade_no);
+
+                alipayService.pay(orderId);
 
 
             }else {
