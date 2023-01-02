@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/PayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/PayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/remote/ServiceOrderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/remote/ServiceOrderClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/PayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/PayService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qa" beforeDir="false" afterPath="$PROJECT_DIR$/qa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/PriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-price/src/main/java/com/yz/serviceprice/service/PriceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/controller/OrderInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/controller/OrderInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -358,7 +362,7 @@
       <workItem from="1671689441631" duration="4887000" />
       <workItem from="1671795782901" duration="12873000" />
       <workItem from="1671857619369" duration="28394000" />
-      <workItem from="1672413026959" duration="41331000" />
+      <workItem from="1672413026959" duration="44168000" />
     </task>
     <servers />
   </component>
@@ -409,6 +413,11 @@
           <url>file://$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java</url>
           <line>444</line>
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/controller/OrderInfoController.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java</url>

@@ -22,3 +22,45 @@
 "accessToken": eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJQaG9uZSI6IjE4NDA0OTA0NDY3IiwiaWRlbnRpdHkiOiIyIiwidG9rZW5UaW1lIjoiTW9uIEphbiAwMiAxNTozMjozOCBDU1QgMjAyMyIsInRva2VuVHlwZSI6ImFjY2Vzc1Rva2VuIn0.6OASBAFAvafbbRlcp3Wk0__CxqyPuJ1SJpZqyJXa7Bs
 
 "orderId":1609920248154836993
+
+{
+    "carId": 1609809623399403521,
+    "points": [
+        {
+            "location": "116.463028,39.933674",
+            "locatetime": 1672671308302
+        },
+		{
+            "location": "116.464423,39.933674",
+            "locatetime": 1672671358302
+        },
+		{
+            "location": "116.466204,39.933707",
+            "locatetime": 1672671408302
+        },
+		{
+            "location": "116.468114,39.933658",
+            "locatetime": 1672671458302
+        },
+		{
+            "location": "116.46968,39.933642",
+            "locatetime": 1672671508302
+        },
+		{
+            "location": "116.471311,39.933691",
+            "locatetime": 1672671558302
+        },
+		{
+            "location": "116.47277,39.933658",
+            "locatetime": 1672671608302
+        },
+		{
+            "location": "116.474573,39.933642",
+            "locatetime": 1672671658302
+        },
+		{
+            "location": "116.476439,39.933642",
+            "locatetime": 1672671708302
+        }
+    ]
+}
