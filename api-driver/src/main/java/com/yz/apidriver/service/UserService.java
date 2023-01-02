@@ -1,6 +1,7 @@
 package com.yz.apidriver.service;
 
 import com.yz.apidriver.remote.ServiceDriverUserClient;
+import com.yz.internalcommon.dto.DriverCarBindingRelationship;
 import com.yz.internalcommon.dto.DriverUser;
 import com.yz.internalcommon.dto.DriverUserWorkStatus;
 import com.yz.internalcommon.dto.ResponseResult;
@@ -26,6 +27,12 @@ public class UserService {
 
     public ResponseResult changeWorkStatus(DriverUserWorkStatus driverUserWorkStatus){
         return serviceDriverUserClient.changeWorkStatus(driverUserWorkStatus);
+    }
+
+    public ResponseResult<DriverCarBindingRelationship> getDriverCarBindingRelationship(String driverPhone){
+        // 根据driverPhone查询司机信息
+        return serviceDriverUserClient.getDriverCarRelationShip(driverPhone);
+
     }
 
 }

@@ -1,11 +1,13 @@
 package com.yz.servicedriveruser.controller;
 
 import com.yz.internalcommon.constant.DriverCarConstants;
+import com.yz.internalcommon.dto.DriverCarBindingRelationship;
 import com.yz.internalcommon.dto.DriverUser;
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.response.DriverUserExistsResponse;
 import com.yz.internalcommon.response.OrderDriverResponse;
 import com.yz.servicedriveruser.mapper.DriverUserMapper;
+import com.yz.servicedriveruser.service.DriverCarBindingRelationshipService;
 import com.yz.servicedriveruser.service.DriverUserService;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.json.JSONObject;
@@ -64,6 +66,19 @@ public class UserController {
     @GetMapping("/get-available-driver/{carId}")
     public ResponseResult<OrderDriverResponse> getAvailableDriver(@PathVariable("carId") Long carId){
         return driverUserService.getAvailableDriver(carId);
+    }
+
+    @Autowired
+    DriverCarBindingRelationshipService driverCarBindingRelationshipService;
+
+    /**
+     * 根据司机手机号查询司机和车辆绑定关系
+     * @param driverPhone
+     * @return
+     */
+    @GetMapping("/driver-car-binding-relationship")
+    public ResponseResult<DriverCarBindingRelationship> getDriverCarRelationShip(@RequestParam String driverPhone){
+        return driverCarBindingRelationshipService.getDriverCarRelationShipByDriverPhone(driverPhone);
     }
 
 
