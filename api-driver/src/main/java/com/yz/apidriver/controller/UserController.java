@@ -2,8 +2,10 @@ package com.yz.apidriver.controller;
 
 import com.yz.apidriver.service.UserService;
 import com.yz.internalcommon.dto.DriverUser;
+import com.yz.internalcommon.dto.DriverUserWorkStatus;
 import com.yz.internalcommon.dto.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,6 +28,12 @@ public class UserController {
     @RequestMapping("/user")
     public ResponseResult updateUser(@RequestBody DriverUser driverUser){
         return userService.updateUser(driverUser);
+    }
+
+    @PostMapping("/driver-user-work-status")
+    public ResponseResult changeWorkStatus(@RequestBody DriverUserWorkStatus driverUserWorkStatus){
+
+        return userService.changeWorkStatus(driverUserWorkStatus);
     }
 
 

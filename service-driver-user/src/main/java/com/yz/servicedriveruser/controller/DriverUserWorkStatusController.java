@@ -5,6 +5,7 @@ import com.yz.internalcommon.dto.DriverUserWorkStatus;
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.servicedriveruser.service.DriverUserWorkStatusService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -26,7 +27,7 @@ public class DriverUserWorkStatusController {
     DriverUserWorkStatusService driverUserWorkStatusService;
 
 
-    @RequestMapping("/driver-user-work-status")
+    @PostMapping("/driver-user-work-status")
     public ResponseResult checkWorkStatus(@RequestBody DriverUserWorkStatus driverUserWorkStatus){
         return driverUserWorkStatusService.checkWorkStatus(driverUserWorkStatus.getDriverId(),driverUserWorkStatus.getWorkStatus());
     }

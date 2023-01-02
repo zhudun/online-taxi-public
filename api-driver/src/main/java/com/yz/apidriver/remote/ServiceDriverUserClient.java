@@ -2,6 +2,7 @@ package com.yz.apidriver.remote;
 
 import com.yz.internalcommon.dto.Car;
 import com.yz.internalcommon.dto.DriverUser;
+import com.yz.internalcommon.dto.DriverUserWorkStatus;
 import com.yz.internalcommon.dto.ResponseResult;
 import com.yz.internalcommon.response.DriverUserExistsResponse;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -25,4 +26,6 @@ public interface ServiceDriverUserClient {
     @RequestMapping(method = RequestMethod.GET, value = "/car")
     public ResponseResult<Car> getCarById(@RequestParam Long carId);
 
+    @RequestMapping(method = RequestMethod.POST, value="/driver-user-work-status")
+    public ResponseResult changeWorkStatus(@RequestBody DriverUserWorkStatus driverUserWorkStatus);
 }

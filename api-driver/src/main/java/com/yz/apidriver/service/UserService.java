@@ -2,6 +2,7 @@ package com.yz.apidriver.service;
 
 import com.yz.apidriver.remote.ServiceDriverUserClient;
 import com.yz.internalcommon.dto.DriverUser;
+import com.yz.internalcommon.dto.DriverUserWorkStatus;
 import com.yz.internalcommon.dto.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +22,10 @@ public class UserService {
 
     public ResponseResult updateUser(@RequestBody DriverUser driverUser){
         return serviceDriverUserClient.updateUser(driverUser);
+    }
+
+    public ResponseResult changeWorkStatus(DriverUserWorkStatus driverUserWorkStatus){
+        return serviceDriverUserClient.changeWorkStatus(driverUserWorkStatus);
     }
 
 }

@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/remote/ServiceDriverUserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/remote/ServiceDriverUserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/interceptor/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/controller/DriverUserWorkStatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/controller/DriverUserWorkStatusController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +103,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TestAlipayApplication">
+  <component name="RunManager" selected="Spring Boot.ServicePayApplication">
     <configuration name="MysqlGenerator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yz.serviceorder.generator.MysqlGenerator" />
       <module name="service-order" />
@@ -235,6 +239,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServicePayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-pay" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yz.servicepay.ServicePayApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServicePriceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service-price" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yz.serviceprice.ServicePriceApplication" />
@@ -263,13 +275,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAlipayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="service-pay" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yz.servicepay.ServicePayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -289,19 +294,19 @@
       <item itemvalue="Spring Boot.ApiDriverApplication" />
       <item itemvalue="Spring Boot.ServiceOrder8099" />
       <item itemvalue="Spring Boot.ServiceOrder8098" />
-      <item itemvalue="Spring Boot.TestAlipayApplication" />
       <item itemvalue="Spring Boot.ApiPassengerApplication" />
       <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
       <item itemvalue="Spring Boot.ServiceSsePushApplication" />
       <item itemvalue="应用程序.MysqlGenerator (1)" />
       <item itemvalue="应用程序.PriceService" />
+      <item itemvalue="Spring Boot.ServicePayApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ServiceSsePushApplication" />
-        <item itemvalue="应用程序.PriceService" />
         <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
+        <item itemvalue="Spring Boot.ServiceSsePushApplication" />
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
+        <item itemvalue="应用程序.PriceService" />
       </list>
     </recent_temporary>
   </component>
@@ -357,7 +362,7 @@
       <workItem from="1671689441631" duration="4887000" />
       <workItem from="1671795782901" duration="12873000" />
       <workItem from="1671857619369" duration="28394000" />
-      <workItem from="1672413026959" duration="18703000" />
+      <workItem from="1672413026959" duration="25362000" />
     </task>
     <servers />
   </component>

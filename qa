@@ -1,0 +1,23 @@
+整体联调：
+
+乘客端：
+手机号：18404904467
+验证码：294932
+"accessToken": eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJQaG9uZSI6IjE4NDA0OTA0NDY3IiwiaWRlbnRpdHkiOiIxIiwidG9rZW5UaW1lIjoiTW9uIEphbiAwMiAxNTowNjoyMyBDU1QgMjAyMyIsInRva2VuVHlwZSI6ImFjY2Vzc1Rva2VuIn0.XeKP7bUHmRcZ-zi6LhgqOsfEtkKVsE5n4A9q-h19b7A
+
+预估价格：
+{
+    "depLongitude": "116.46",
+    "depLatitude": "39.93",
+    "destLongitude": "116.48",
+    "destLatitude": "39.93",
+    "cityCode": "110000",
+    "vehicleType": "1"
+}
+
+
+司机端：
+手机号：18404904467
+验证码：470366
+"accessToken": eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJQaG9uZSI6IjE4NDA0OTA0NDY3IiwiaWRlbnRpdHkiOiIyIiwidG9rZW5UaW1lIjoiTW9uIEphbiAwMiAxNTozMjozOCBDU1QgMjAyMyIsInRva2VuVHlwZSI6ImFjY2Vzc1Rva2VuIn0.6OASBAFAvafbbRlcp3Wk0__CxqyPuJ1SJpZqyJXa7Bs
+
