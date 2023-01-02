@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/remote/ServiceDriverUserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/remote/ServiceDriverUserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-driver/src/main/java/com/yz/apidriver/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/util/JwtUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/DriverCarBindingRelationshipService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-driver-user/src/main/java/com/yz/servicedriveruser/service/DriverCarBindingRelationshipService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/request/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/request/OrderRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,9 +298,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
-        <item itemvalue="Spring Boot.ServiceSsePushApplication" />
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
+        <item itemvalue="Spring Boot.ServiceSsePushApplication" />
+        <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
         <item itemvalue="应用程序.PriceService" />
       </list>
     </recent_temporary>
@@ -362,7 +357,7 @@
       <workItem from="1671689441631" duration="4887000" />
       <workItem from="1671795782901" duration="12873000" />
       <workItem from="1671857619369" duration="28394000" />
-      <workItem from="1672413026959" duration="30667000" />
+      <workItem from="1672413026959" duration="36138000" />
     </task>
     <servers />
   </component>
@@ -403,6 +398,41 @@
           <url>file://$PROJECT_DIR$/service-map/src/main/java/com/yz/servicemap/controller/TestController.java</url>
           <line>31</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/controller/OrderController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java</url>
+          <line>69</line>
+          <properties class="com.yz.serviceorder.service.OrderInfoService" method="add">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/service/OrderService.java</url>
+          <line>21</line>
+          <properties class="com.yz.apipassenger.service.OrderService" method="add">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/api-passenger/src/main/java/com/yz/apipassenger/remote/ServiceOrderClient.java</url>
+          <line>17</line>
+          <properties class="com.yz.apipassenger.remote.ServiceOrderClient" method="add" />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/controller/OrderInfoController.java</url>
+          <line>37</line>
+          <properties class="com.yz.serviceorder.controller.OrderInfoController" method="add">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
