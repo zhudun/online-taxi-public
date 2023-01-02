@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba25887-f3cb-408f-a0d7-1c0b0451c5fe" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/request/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/yz/internalcommon/request/OrderRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/src/main/java/com/yz/serviceorder/service/OrderInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-sse-push/src/main/resources/static/driver-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/src/main/resources/static/driver-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-sse-push/src/main/resources/static/passenger-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/src/main/resources/static/passenger-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-sse-push/target/classes/static/driver-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/target/classes/static/driver-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-sse-push/target/classes/static/passenger-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/service-sse-push/target/classes/static/passenger-test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +102,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServicePayApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceOrder8099">
     <configuration name="MysqlGenerator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yz.serviceorder.generator.MysqlGenerator" />
       <module name="service-order" />
@@ -298,8 +302,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ApiPassengerApplication" />
         <item itemvalue="Spring Boot.ServiceSsePushApplication" />
+        <item itemvalue="Spring Boot.ApiPassengerApplication" />
         <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
         <item itemvalue="应用程序.PriceService" />
       </list>
@@ -357,7 +361,7 @@
       <workItem from="1671689441631" duration="4887000" />
       <workItem from="1671795782901" duration="12873000" />
       <workItem from="1671857619369" duration="28394000" />
-      <workItem from="1672413026959" duration="36138000" />
+      <workItem from="1672413026959" duration="37270000" />
     </task>
     <servers />
   </component>
