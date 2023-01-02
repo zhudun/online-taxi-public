@@ -156,7 +156,7 @@ public class PriceService {
         price = BigDecimalUtils.add(price,mileFare);
 
         //时长的分钟数
-        double durationMinute = BigDecimalUtils.divide(duration,60);
+        double durationMinute = duration;
         //计时单价
         double unitPricePerMinute = priceRule.getUnitPricePerMinute();
         //时长费用
